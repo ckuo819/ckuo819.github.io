@@ -1,0 +1,528 @@
+.div-wrapper {
+  background-color: #f0f0d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-wrapper .project-page-3 {
+  background-color: #f0f0d7;
+  overflow-x: hidden;
+  width: 1440px;
+  height: 5164px;
+  position: relative;
+}
+
+.div-wrapper .overlap-16 {
+  position: absolute;
+  width: 1395px;
+  height: 861px;
+  top: 85px;
+  left: 19px;
+}
+
+.div-wrapper .rectangle-5 {
+  position: absolute;
+  width: 1382px;
+  height: 252px;
+  top: 0;
+  left: 13px;
+  background-color: #d0ddd0;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.div-wrapper .text-wrapper-49 {
+  position: absolute;
+  width: 163px;
+  top: 781px;
+  left: 181px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-50 {
+  position: absolute;
+  width: 269px;
+  top: 359px;
+  left: 181px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .rectangle-6 {
+  position: absolute;
+  width: 1315px;
+  height: 708px;
+  top: 127px;
+  left: 49px;
+}
+
+.div-wrapper .workday-UX-research {
+  position: absolute;
+  width: 1320px;
+  top: 17px;
+  left: 44px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-51 {
+  font-weight: 800;
+}
+
+.div-wrapper .text-wrapper-52 {
+  font-weight: 500;
+}
+
+.div-wrapper .rectangle-7 {
+  position: absolute;
+  width: 1290px;
+  height: 131px;
+  top: 439px;
+  left: 44px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .rectangle-8 {
+  position: absolute;
+  width: 1290px;
+  height: 83px;
+  top: 593px;
+  left: 43px;
+  background-color: #fbfbc75e;
+  border-radius: 16px;
+}
+
+.div-wrapper .woman-is-leaning-on {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 282px;
+  left: 0;
+}
+
+.div-wrapper .timeline-from {
+  position: absolute;
+  width: 1098px;
+  top: 592px;
+  left: 61px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 40px;
+}
+
+.div-wrapper .text-wrapper-53 {
+  position: absolute;
+  width: 1253px;
+  top: 454px;
+  left: 61px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .loudspeaker {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 704px;
+  left: 0;
+}
+
+.div-wrapper .text-wrapper-54 {
+  position: absolute;
+  width: 477px;
+  top: 3733px;
+  left: 200px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-55 {
+  position: absolute;
+  width: 299px;
+  top: 1695px;
+  left: 200px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-56 {
+  position: absolute;
+  width: 611px;
+  top: 4288px;
+  left: 200px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-57 {
+  position: absolute;
+  width: 410px;
+  top: 1222px;
+  left: 200px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .overlap-17 {
+  position: absolute;
+  width: 1290px;
+  height: 1807px;
+  top: 1788px;
+  left: 68px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .data-collection {
+  position: absolute;
+  width: 1253px;
+  top: 0;
+  left: 18px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-58 {
+  font-weight: 700;
+}
+
+.div-wrapper .text-wrapper-59 {
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+}
+
+.div-wrapper .screenshot-7 {
+  position: absolute;
+  width: 636px;
+  height: 211px;
+  top: 317px;
+  left: 113px;
+  object-fit: cover;
+}
+
+.div-wrapper .screenshot-8 {
+  position: absolute;
+  width: 404px;
+  height: 294px;
+  top: 697px;
+  left: 113px;
+  object-fit: cover;
+}
+
+.div-wrapper .screenshot-9 {
+  position: absolute;
+  width: 545px;
+  height: 395px;
+  top: 697px;
+  left: 562px;
+  object-fit: cover;
+}
+
+.div-wrapper .screenshot-10 {
+  position: absolute;
+  width: 694px;
+  height: 368px;
+  top: 1408px;
+  left: 113px;
+  object-fit: cover;
+}
+
+.div-wrapper .overlap-18 {
+  position: absolute;
+  width: 1277px;
+  height: 139px;
+  top: 950px;
+  left: 69px;
+}
+
+.div-wrapper .identify-the-pain-6 {
+  position: absolute;
+  width: 1253px;
+  top: 0;
+  left: 13px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .rectangle-9 {
+  position: absolute;
+  width: 1277px;
+  height: 138px;
+  top: 1px;
+  left: 0;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .categories-aren-t-wrapper {
+  position: absolute;
+  width: 1277px;
+  height: 238px;
+  top: 1340px;
+  left: 81px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .categories-aren-t {
+  position: absolute;
+  width: 1239px;
+  top: 5px;
+  left: 15px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .overlap-19 {
+  position: absolute;
+  width: 1290px;
+  height: 334px;
+  top: 3816px;
+  left: 68px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .text-wrapper-60 {
+  position: absolute;
+  width: 1242px;
+  top: 16px;
+  left: 29px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .overlap-20 {
+  position: absolute;
+  width: 1290px;
+  height: 551px;
+  top: 4388px;
+  left: 68px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+}
+
+.div-wrapper .text-wrapper-61 {
+  position: absolute;
+  width: 1257px;
+  top: 13px;
+  left: 14px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .problem-solving-with-wrapper {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 1156px;
+  left: 19px;
+  background-image: url(./img/problem-solving-with-puzzle-pieces-3.png);
+  background-size: 100% 100%;
+}
+
+.div-wrapper .img-3 {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 0;
+  left: 0;
+}
+
+.div-wrapper .young-man-thinking-wrapper {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 3655px;
+  left: 19px;
+  background-image: url(./img/young-man-thinking-and-trying-to-solve-problem-3.png);
+  background-size: 100% 100%;
+}
+
+.div-wrapper .self-love-with-woman-wrapper {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 4210px;
+  left: 19px;
+  background-image: url(./img/self-love-with-woman-looking-in-the-mirror-3.png);
+  background-size: 100% 100%;
+}
+
+.div-wrapper .maintenance-wrench-wrapper {
+  position: absolute;
+  width: 181px;
+  height: 157px;
+  top: 1610px;
+  left: 15px;
+  background-image: url(./img/maintenance-wrench-and-screwdriver-3.png);
+  background-size: 100% 100%;
+}
+
+.div-wrapper .group-4 {
+  position: fixed;
+  width: 1452px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+.div-wrapper .navbar-6 {
+  position: relative;
+  width: 1440px;
+  height: 60px;
+  background-color: #727d73;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.div-wrapper .text-wrapper-62 {
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  left: 367px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .main-page-5 {
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  left: 156px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-63 {
+  left: 1027px;
+  font-weight: 700;
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  font-family: "Playfair Display", Helvetica;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-64 {
+  left: 807px;
+  font-weight: 800;
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  font-family: "Playfair Display", Helvetica;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-65 {
+  left: 587px;
+  font-weight: 700;
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  font-family: "Playfair Display", Helvetica;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.div-wrapper .text-wrapper-66 {
+  position: absolute;
+  width: 159px;
+  height: 21px;
+  top: 23px;
+  left: 1226px;
+  font-family: "Playfair Display", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
