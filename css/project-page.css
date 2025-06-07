@@ -1,0 +1,75 @@
+/* css/project-page.css */
+
+.project-main-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 120px 40px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.project-title-box {
+  width: 100%;
+  padding: 32px;
+  background-color: #d0ddd0;
+  border: 1px solid #000000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.project-title-box .subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.content-box {
+  padding: 32px;
+  background-color: #80b09f4f;
+  border-radius: 16px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.content-box strong { font-weight: 700; }
+
+.timeline-box {
+  padding: 16px;
+  background-color: #fbfbc75e;
+  border-radius: 16px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .project-main-container { padding: 100px 15px 40px 15px; gap: 50px; }
+  .section-header { flex-direction: column; text-align: center; gap: 15px; }
+}

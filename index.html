@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="intro-page" data-model-id="1:2">
-      <div class="div">
+    <title>Cindy Kuo's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <nav class="navbar-wrapper">
+        <div class="navbar-container">
+            <a href="about-me.html">About Me</a>
+            <a href="projects/proj1.html">Project 1</a>
+            <a href="projects/proj2.html">Project 2</a>
+            <a href="projects/proj3.html">Project 3</a>
+        </div>
+    </nav>
+    
+    <main class="intro-page-container">
+        
         <div class="introduction-section">
-          <p class="welcome-text">Welcome To My Portfolio !</p>
-          <p class="introduction-text">
-            With expertise in psychology, research methods, and data analysis, I strive to improve communities and
-            customer experiences through data-driven insights.
-          </p>
-        </div>
-        <a href="div-wrapper.html"
-          ><div class="button">
-            <p class="text-wrapper">
-              Transforming Santa Clara University’s Workday Experience Through Insightful UX Research
+            <p class="welcome-text">Welcome To My Portfolio !</p>
+            <p class="introduction-text">
+                With expertise in psychology, research methods, and data analysis, I strive to improve communities and customer experiences through data-driven insights.
             </p>
-          </div></a
-        >
-        <a href="project-page-screen.html"
-          ><div class="button-2">
-            <p class="text-wrapper">
-              Launching SCU’s First Pulse Survey: Establishing Guidelines and Long-Term Plans with Quantitative Research
-            </p>
-          </div></a
-        >
-        <a href="project-page.html"
-          ><div class="button-3">
-            <p class="p">Empowering Communities: Leveraging Research Methods to Drive Growth and Impact</p>
-          </div></a
-        >
-        <a href="about-me-page.html"
-          ><div class="ellipse-wrapper"><img class="ellipse" src="img/ellipse-2.png" /></div
-        ></a>
-        <div class="overlap"><div class="project-section">Project</div></div>
-        <div class="navigation-bar">
-          <div class="navbar">
-            <a href="about-me-page.html"><div class="text-wrapper-2">About Me</div></a>
-            <a href="project-page.html"><div class="project-link">Project 3</div></a>
-            <a href="project-page-screen.html"><div class="project-link-2">Project 2</div></a>
-            <a href="div-wrapper.html"><div class="project-link-3">Project 1</div></a>
-            <a href="contact-page.html"><div class="contact-link">Contact</div></a>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
+
+        <div class="photo-and-labels-wrapper">
+
+            <div class="about-me-circle">
+                <a href="about-me.html" class="profile-photo-link" aria-label="About Me Page">
+                    <img class="profile-photo-img" src="img/me.png" alt="A photo of Cindy Kuo"/>
+                </a>
+            </div>
+            
+            <div class="label-container">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/cindykuo123/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                    <!-- <a href="https://github.com/ckuo819" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="img/github.png" alt="GitHub"></a> -->
+                    <a href="mailto:cindykuo819@gmail.com" aria-label="Email"><img src="img/email.png" alt="Email"></a>
+                </div>
+
+                <div class="label-text">About me</div>
+            </div>
+
+        </div>
+        
+        <div class="project-label-wrapper">
+            <div class="project-label-text">Projects</div>
+        </div>
+
+        <div class="project-cards-container">
+            <a href="projects/proj1.html" class="project-card">
+                <img class="card-background" src="img/proj1.png" alt="Preview of Project 1"/>
+                <div class="card-overlay">
+                    <p class="card-title">Transforming Santa Clara University's Workday Experience Through Insightful UX Research</p>
+                </div>
+            </a>
+            <a href="projects/proj2.html" class="project-card">
+                <img class="card-background" src="img/proj2.png" alt="Preview of Project 2"/>
+                <div class="card-overlay">
+                    <p class="card-title">Launching SCU's First Pulse Survey: Establishing Guidelines and Long-Term Plans with Quantitative Research</p>
+                </div>
+            </a>
+            <a href="projects/proj3.html" class="project-card">
+                <img class="card-background" src="img/proj3.png" alt="Preview of Project 3"/>
+                <div class="card-overlay">
+                    <p class="card-title">Empowering Communities: Leveraging Research Methods to Drive Growth and Impact</p>
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
 </html>

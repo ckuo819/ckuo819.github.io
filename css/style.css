@@ -1,0 +1,62 @@
+/* css/style.css */
+
+/* === 全局重置与字体 === */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:800,500,400,700");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* === 基础样式 === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0d7;
+  min-height: 100vh;
+  font-family: "Playfair Display", Helvetica, serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* === 共享导航栏基础结构 === */
+.navbar-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #727d73;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0 16px;
+}
+
+.navbar-container a {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,98 @@
+/* css/about-me.css (最终修复版 v5) */
+
+/* --- 1. 页面主容器 (Grid布局) --- */
+.about-me-page-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 40px 60px 40px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header header"
+    "character bubble";
+  gap: 20px 60px;
+  align-items: center;
+}
+
+/* --- 2. 标题区域 --- */
+.title-wrapper {
+  grid-area: header;
+  background-color: #d0ddd0;
+  border: 1px solid #000000;
+  padding: 40px;
+}
+.title-wrapper .main-title { display: block; font-weight: 700; font-size: clamp(32px, 4vw, 48px); margin-bottom: 20px; }
+.title-wrapper .subtitle { display: block; font-weight: 500; font-size: clamp(20px, 2.5vw, 32px); }
+
+/* --- 3. 插图区域 --- */
+.illustration-area {
+  grid-area: character;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1.2;
+  margin: 0 auto;
+}
+.character-img-container { position: absolute; width: 60%; height: 80%; bottom: 0; left: 0; }
+.character-img { position: absolute; width: 100%; height: 82%; bottom: 0; left: 0; }
+.character-head { position: absolute; width: 46%; height: 36%; top: 0; left: 21%; background-image: url(../img/head-head-long.png); background-size: contain; background-repeat: no-repeat; }
+.character-face { position: absolute; width: 31%; height: 28%; top: 31%; left: 49%; }
+
+/* --- 4. 文字与按钮区域 --- */
+.text-and-buttons-area {
+  grid-area: bubble;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- (核心修复) “图片方框” 和 “文字方框” --- */
+.speech-bubble-box {
+  background-image: url(../img/speech-bubble.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; /* 1. 设为父级定位基准 */
+  width: 100%;
+  aspect-ratio: 1020 / 687;
+}
+
+.introduction-text { 
+  position: absolute;   /* 2. 将文字框设为绝对定位，相对于父级 */
+
+  /* --- (最终版) 基于图片精确计算的比例 --- */
+  top: 8%;           
+  left: 25%;         
+  width: 65%;        
+  height: 65%;        
+  
+  /* 使用 Flexbox 让文字在自己的方框内居中对齐 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* 文字本身左对齐，但整个块是居中的 */
+
+  font-weight: 400; 
+  font-size: clamp(10px, 1.5vw, 25px); /* 允许字体变得更小以适应容器 */
+  line-height: 1.5; /* 增加行高，使其更易读 */
+}
+/* --- 修复结束 --- */
+
+
+.button-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.button-link { padding: 15px 30px; background-color: #d0ddd0; border-radius: 20px; border: 1px solid #000000; text-align: center; font-size: clamp(18px, 2vw, 24px); font-weight: 700; transition: all 0.3s ease; }
+.button-link:hover { background-color: #80b09f; color: #ffffff; }
+
+/* --- 5. 响应式调整 (针对小屏幕) --- */
+@media screen and (max-width: 900px) {
+  .about-me-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 40px 20px;
+  }
+  .illustration-area { order: 2; width: 80%; max-width: 350px; margin: 40px auto 0 auto; }
+  .text-and-buttons-area { order: 1; }
+}
