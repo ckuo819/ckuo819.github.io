@@ -17,74 +17,251 @@
             <a href="proj3.html">Project 3</a>
         </div>
     </nav>
-    <main class="project-main-container">
-        <header class="project-title-box">
-            Workday UX Research
-            <div class="subtitle">Improving Santa Clara University Workday Portal Using UX Research Methods</div>
-        </header>
-        <section class="project-section">
+    
+    <div class="project-page">
+        <div class="project-container">
+            <div class="project-tagline">
+                <div class="project-tagline-text">Project 1</div>
+            </div>
+            
+            <div class="project-title">
+                <p class="project-subtitle">Enhancing the Workday Academic Platform Experience</p>
+            </div>
+            
+            <div class="project-tags">
+                <div class="tag"><div class="tag-text">UX Research</div></div>
+                <div class="tag"><div class="tag-text">Usability Testing</div></div>
+                <div class="tag"><div class="tag-text">Interaction Design</div></div>
+            </div>
+            
+            <div class="divider-container">
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="project-info-grid">
+                <div class="info-item">
+                    <div class="info-label">Timeline</div>
+                    <div class="info-content">4 months (Fall 2023)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Client</div>
+                    <div class="info-content">Santa Clara University</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Role</div>
+                    <div class="info-content">UX Researcher</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Impact</div>
+                    <div class="info-content">Recommendations adopted by SCU IT to fix search and improve navigation</div>
+                </div>
+            </div>
+            
+            <div class="divider-container">
+                <div class="divider-line"></div>
+            </div>
+            
+            <section class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">The Problem: A Confusing & Inefficient Platform</h2>
+                </div>
+                <div class="section-content">
+                    <p class="section-text">
+                        SCU's Workday platform was causing significant student frustration due to vague categories, an
+                        inefficient 10-click process for core tasks, and an ineffective search function.
+                    </p>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Pain Point 1: Confusing Information Architecture</h3>
+                    </div>
+                    <p class="image-caption">
+                        This visual demonstrates the confusing user flow. (1) Starting from the dashboard, (2) the user must
+                        guess from vague top-level categories, (3) only to be met with another list of overlapping and
+                        non-descriptive sub-categories, increasing the number of clicks needed to complete a task.
+                    </p>
+                    <div class="image-grid">
+                        <div class="image-group">
+                            <img class="step-image" src="../img/tempimage0pdifb-1-3.png" alt="Step 1 Screenshot"/>
+                            <p class="image-caption-small">
+                                <span class="caption-bold">Step 1: The journey begins.</span>
+                                <span class="caption-regular">A student lands on the main dashboard needing to find a specific academic task, such as planning their courses.</span>
+                            </p>
+                        </div>
+                        <div class="image-group">
+                            <img class="step-image" src="../img/tempimage0pdifb-1-4.png" alt="Step 2 Screenshot"/>
+                            <p class="image-caption-small">
+                                <span class="caption-bold">Step 2: The first obstacle.</span>
+                                <span class="caption-regular">After opening the menu, the student is met with four vague, high-level categories. They are forced to guess which one contains their goal.</span>
+                            </p>
+                        </div>
+                        <div class="image-group">
+                            <img class="step-image" src="../img/tempimage0pdifb-1-5.png" alt="Step 3 Screenshot"/>
+                            <p class="image-caption-small">
+                                <span class="caption-bold">Step 3: Deeper confusion.</span>
+                                <span class="caption-regular">Choosing 'Academics' reveals yet another list of confusing and overlapping sub-categories. Terms like 'Planning & Registration' and 'Academic Records' are not self-evident, leading to more clicks and uncertainty.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Pain Point 2: The 10-Click User Journey</h3>
+                    </div>
+                    <div class="image-content">
+                        <div class="video-container">
+                            <iframe 
+                                src="https://drive.google.com/file/d/1d-sakghNOpDQoGiZDMOu0ecCeLqVK2Zl/preview" 
+                                width="100%" 
+                                height="480" 
+                                allow="autoplay"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="image-caption">
+                            This video demonstrates the frustrating 10-click process required to perform a simple task - students had to navigate through multiple layers of confusing menus to accomplish basic academic tasks.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Pain Point 3: Ineffective Search Function</h3>
+                    </div>
+                    <div class="image-content">
+                        <img class="full-width-image" src="../img/tempimage4kudbo-1-1.png" alt="Search Function Screenshot"/>
+                        <p class="image-caption">
+                            When searching for a critical term like "final" (expecting exam schedules), the system
+                            returned unrelated results, including a student's name. This demonstrated a core failure in the
+                            search logic and created a confusing user experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section-container">
             <div class="section-header">
-                <img class="section-icon" src="../img/woman-is-leaning-on-question-mark-2.png" alt="Icon"/>
-                <h2 class="section-title">What I Build?</h2>
+                    <h2 class="section-title">My Approach: A Mixed-Methods Study</h2>
+                </div>
+                <div class="section-content">
+                    <p class="section-text">
+                        To ground our solutions in real user data, I used a mixed-methods approach to understand both the
+                        "what" and the "why" behind student frustrations.
+                    </p>
+                </div>
+                
+                <div class="method-cards">
+                    <div class="method-card">
+                        <h4 class="method-title">Qualitative Data</h4>
+                        <p class="method-description">
+                            I conducted 9 in-depth user interviews to gather rich, contextual stories about student experiences,
+                            which revealed the nuances of their struggles with navigation.
+                        </p>
+                    </div>
+                    <div class="method-card">
+                        <h4 class="method-title">Quantitative Data</h4>
+                        <p class="method-description">
+                            We designed and distributed a survey to gather broad insights, receiving over 120 responses which
+                            helped us quantify the most common pain points.
+                        </p>
             </div>
-            <div class="content-box">
-                <p>Identify the pain points of academic platform of Workday navigation system and suggestions on how to improve them.</p>
+                    <div class="method-card">
+                        <h4 class="method-title">Synthesis & Analysis</h4>
+                        <p class="method-description">
+                            We used affinity mapping to cluster the qualitative feedback and analyzed survey data in Qualtrics.
+                            This synthesis clearly pointed to the navigation system as the core issue to focus on.
+                        </p>
             </div>
-            <div class="timeline-box">
-                <p><strong>Timeline:</strong> from September 2023 to December 2023<br/><strong>Project/Client:</strong> Santa Clara University class project</p>
             </div>
         </section>
-        <section class="project-section">
+            
+            <div class="divider-container">
+                <div class="divider-line"></div>
+            </div>
+            
+            <section class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">The Solution: A Multi-faceted Approach to Clarity</h2>
+                </div>
+                <div class="section-content">
+                    <p class="section-text">
+                        To address the identified pain points, we proposed a set of targeted solutions to improve clarity and
+                        efficiency across the platform's navigation and search systems.
+                    </p>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Solution 1: Improving Vertical Navigation</h3>
+                    </div>
+                    <div class="image-content">
+                        <img class="solution-image" src="../img/tempimage0pdifb-1-6.png" alt="Improved Navigation Screenshot"/>
+                        <p class="image-caption">
+                            To solve the confusing navigation, we recommended clarifying the link names and adding helpful
+                            descriptions, as shown here. These changes were based on our proposal to use card-sorting to
+                            understand how students mentally group these categories.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Solution 2: Enhancing Horizontal Navigation</h3>
+                    </div>
+                    <div class="solution-grid">
+                        <div class="solution-item">
+                            <img class="solution-image" src="../img/tempimagessammu-1.png" alt="Save Progress Feature"/>
+                            <p class="image-caption-small">
+                                A 'Save Progress' feature ensures students don't have to re-enter common filters repeatedly.
+                            </p>
+                        </div>
+                        <div class="solution-item">
+                            <img class="solution-image" src="../img/tempimagessammu-1-1.png" alt="Collapsible Sidebar"/>
+                            <p class="image-caption-small">
+                                A collapsible sidebar menu allows for quicker navigation and reduces page-to-page clicks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <div class="section-title-wrapper">
+                        <h3 class="subsection-title">Solution 3: A Smarter, More Consistent Search</h3>
+                    </div>
+                    <div class="image-content">
+                        <img class="full-width-image" src="../img/tempimagessammu-1-2.png" alt="Improved Search Results"/>
+                        <p class="image-caption">
+                            The search bar should give relevant suggestions and improved results for ambiguous terms.
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img class="full-width-image" src="../img/tempimagessammu-1-3.png" alt="Search Autocomplete"/>
+                        <p class="image-caption">
+                            Autofill suggestions should match existing, clearly-labeled subcategories to improve discoverability.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="divider-container">
+                <div class="divider-line"></div>
+            </div>
+            
+            <section class="section-container">
             <div class="section-header">
-                <img class="section-icon" src="../img/loudspeaker-3.png" alt="Icon" />
-                <h2 class="section-title">Impact</h2>
-            </div>
-            <div class="content-box">
-                <p>Suggestions to the IT team that works on the academic workday system in SCU and they fix some of the issues such as search engines error in the websites and keeping working on make the websites navigation more smoothly.</p>
-            </div>
-        </section>
-        <section class="project-section">
-            <div class="section-header">
-                <img class="section-icon" src="../img/problem-solving-with-puzzle-pieces-3.png" alt="Icon" />
-                <h2 class="section-title">Identifying Problems</h2>
-            </div>
-            <div class="content-box">
-                <p><strong>Categories aren't Self-Evident</strong>: students are confused what the categories means and couldn't find the exact things they want efficiently.<br><strong>Long Navigation Process</strong>: it takes students 10 steps (clicks) enable them to find the courses they want to add in their course plan.<br><strong>Search Bar</strong>: It couldn't find things correctly and give you results that is irrelevant.</p>
-            </div>
-        </section>
-        <section class="project-section">
-            <div class="section-header">
-                <img class="section-icon" src="../img/maintenance-wrench-and-screwdriver-3.png" alt="Icon" />
-                <h2 class="section-title">Approach</h2>
-            </div>
-            <div class="content-box">
-                <p><strong>Data collection</strong>: Quantitative: surveys, n=120; Qualitative: interviews, n=9<br><strong>Data analysis</strong>: Qualtrics and Google Excel<br><strong>Solution</strong><br>Vertical Navigation: using Follow-up surveys / card-sorting question; Improve similar and overlapping naming; Include description for each feature.<br>Horizontal Navigation: create a 'save progress' feature, which ensure students don't need to click through a hassle of buttons to get to what are used the most in the Workday system.<br>Useful Sidebar: The original sidebar only contains 4 categories. We suggests to create a collapsible sidebar menu can help students locate things quickly, and reducing the time of navigation.<br>Search Bar Improvement: the search bar needs to gives students relevant search suggestions. And we suggest to also match the autofill search suggestions with the existing subcategories.</p>
-            </div>
-            <div class="media-container">
-                <img src="../img/screenshot-2025-04-09-at-12-32-59-pm-1.png" alt="Project 1 Screenshot 1"/>
-                <img src="../img/screenshot-2025-04-09-at-12-33-27-pm-1.png" alt="Project 1 Screenshot 2"/>
-                <img src="../img/screenshot-2025-04-09-at-12-33-49-pm-1.png" alt="Project 1 Screenshot 3"/>
-                <img src="../img/screenshot-2025-04-09-at-12-34-27-pm-1.png" alt="Project 1 Screenshot 4"/>
-            </div>
-        </section>
-        <section class="project-section">
-            <div class="section-header">
-                <img class="section-icon" src="../img/young-man-thinking-and-trying-to-solve-problem-3.png" alt="Icon" />
-                <h2 class="section-title">Pain Points and Solution</h2>
-            </div>
-            <div class="content-box">
-                <p>Since the workday system in Santa Clara university's students portal are newly launch when we decide to do this project, we got lots of complain and issues when we conducted the interviews. And we struggle to pain points the main struggles that we want to focus on. After discussed with our professor, we decided to use post notes to categorize and organize all the pain points that reflected from our experience and from the interviews and find out the biggest categories and focus on that, which is the navigation in workday student portal system.</p>
-            </div>
-        </section>
-        <section class="project-section">
-            <div class="section-header">
-                <img class="section-icon" src="../img/self-love-with-woman-looking-in-the-mirror-3.png" alt="Icon" />
                 <h2 class="section-title">Reflection</h2>
             </div>
-            <div class="content-box">
-                <p>One thing is that we all agreed that it would have been really interesting to have also collected data from SCU's staff as they also use Workday. We would want to investigate whether they have the same problems as students do using workday or if their problems are entirely different and how so. We also reflected on the possibly of redoing this project and one thing we would've have done differently is to try our hand at card sorting ourselves. To briefly define what card sorting is, it's where we would ask users to organize cards into groups that they feel is appropriate to them. We would do this with the categories and subcategories to get a clear picture of how students would organize the categories themselves for ourselves and we'd then present that information. Additionally we'd like to point out that during our process of researching, workday has been updating some of its platform features. For example, in the academics tab they added a whole new box for registration requirements.</p>
+                <div class="section-content">
+                    <p class="section-text">
+                        This project reinforced the importance of focusing on core user frustrations. By systematically
+                        identifying navigation as the primary pain point, we were able to propose targeted, high-impact solutions
+                        that the SCU IT team could readily implement, leading to tangible improvements for the student body.
+                    </p>
             </div>
         </section>
-    </main>
+        </div>
+    </div>
 </body>
 </html>

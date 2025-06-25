@@ -2,7 +2,7 @@
 
 /* === 全局重置与字体 === */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:800,500,400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:800,600,400,700");
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -21,6 +21,12 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
 }
 
 /* === 共享导航栏基础结构 === */
