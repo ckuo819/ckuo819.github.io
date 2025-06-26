@@ -1,75 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Cindy Kuo's Portfolio</title>
+    <meta name="description" content="Cindy Kuo - UX Researcher specializing in psychology, research methods, and data analysis. Improving communities and customer experiences through data-driven insights." />
+    <meta name="keywords" content="UX Research, User Experience, Psychology, Data Analysis, Portfolio" />
+    <title>Cindy Kuo - UX Researcher Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <nav class="navbar-wrapper">
+    <nav class="navbar-wrapper" role="navigation" aria-label="Main navigation">
         <div class="navbar-container">
-            <a href="about-me.html">About Me</a>
-            <a href="projects/proj1.html">Project 1</a>
-            <a href="projects/proj2.html">Project 2</a>
-            <a href="projects/proj3.html">Project 3</a>
+            <span class="nav-current" aria-current="page">Main Page</span>
+            <a href="about-me.html" aria-label="Learn more about Cindy">About Me</a>
+            <a href="projects/proj1.html" aria-label="View Project 1">Project 1</a>
+            <a href="projects/proj2.html" aria-label="View Project 2">Project 2</a>
+            <a href="projects/proj3.html" aria-label="View Project 3">Project 3</a>
         </div>
     </nav>
     
-    <main class="intro-page-container">
+    <main class="intro-page-container page-container">
         
-        <div class="introduction-section">
-            <p class="welcome-text">Welcome To My Portfolio !</p>
+        <section class="introduction-section" aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading" class="welcome-text">Welcome To My Portfolio!</h1>
             <p class="introduction-text">
                 With expertise in psychology, research methods, and data analysis, I strive to improve communities and customer experiences through data-driven insights.
             </p>
-        </div>
+        </section>
 
-        <div class="photo-and-labels-wrapper">
+        <aside class="photo-and-labels-wrapper">
 
-            <div class="about-me-circle">
+            <div class="about-me-circle" role="button" tabindex="0" aria-label="View About Me page">
                 <a href="about-me.html" class="profile-photo-link" aria-label="About Me Page">
-                    <img class="profile-photo-img" src="img/me.png" alt="A photo of Cindy Kuo"/>
+                    <img class="profile-photo-img" src="img/profile-photo.png" alt="Professional photo of Cindy Kuo, UX Researcher"/>
                 </a>
             </div>
             
             <div class="label-container">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/cindykuo123/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                    <!-- <a href="https://github.com/ckuo819" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="img/github.png" alt="GitHub"></a> -->
-                    <a href="mailto:cindykuo819@gmail.com" aria-label="Email"><img src="img/email.png" alt="Email"></a>
+                <div class="social-icons" role="group" aria-label="Social media links">
+                    <a href="https://www.linkedin.com/in/cindykuo819/" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
+                        <img src="img/icon-linkedin.png" alt="LinkedIn" />
+                    </a>
+                    <!-- <a href="https://github.com/ckuo819" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="img/icon-github.png" alt="GitHub"></a> -->
+                    <a href="mailto:cindykuo819@gmail.com" aria-label="Send email to Cindy">
+                        <img src="img/icon-email.png" alt="Email" />
+                    </a>
                 </div>
 
-                <div class="label-text">About me</div>
+                <a href="about-me.html" class="label-text" aria-label="Learn more about me">About me</a>
             </div>
 
-        </div>
+        </aside>
         
-        <div class="project-label-wrapper">
-            <div class="project-label-text">Projects</div>
-        </div>
+        <section class="project-label-wrapper" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="project-label-text">Projects</h2>
+        </section>
 
-        <div class="project-cards-container">
-            <a href="projects/proj1.html" class="project-card">
-                <img class="card-background" src="img/proj1.png" alt="Preview of Project 1"/>
-                <div class="card-overlay">
-                    <p class="card-title">Transforming Santa Clara University's Workday Experience Through Insightful UX Research</p>
-                </div>
-            </a>
-            <a href="projects/proj2.html" class="project-card">
-                <img class="card-background" src="img/proj2.png" alt="Preview of Project 2"/>
-                <div class="card-overlay">
-                    <p class="card-title">Launching SCU's First Pulse Survey: Establishing Guidelines and Long-Term Plans with Quantitative Research</p>
-                </div>
-            </a>
-            <a href="projects/proj3.html" class="project-card">
-                <img class="card-background" src="img/proj3.png" alt="Preview of Project 3"/>
-                <div class="card-overlay">
-                    <p class="card-title">Empowering Communities: Leveraging Research Methods to Drive Growth and Impact</p>
-                </div>
-            </a>
-        </div>
+        <section id="projects" class="project-cards-container" role="region" aria-label="Featured projects">
+            <article class="project-card">
+                <a href="projects/proj1.html" aria-label="View Project 1: Santa Clara University Workday Experience">
+                    <img class="card-background" src="img/project-01-preview.png" alt="Preview of Project 1: Workday UX Research"/>
+                    <div class="card-overlay">
+                        <h3 class="card-title">Transforming Santa Clara University's Workday Experience Through Insightful UX Research</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card">
+                <a href="projects/proj2.html" aria-label="View Project 2: SCU Pulse Survey">
+                    <img class="card-background" src="img/project-02-preview.png" alt="Preview of Project 2: Pulse Survey Research"/>
+                    <div class="card-overlay">
+                        <h3 class="card-title">Launching SCU's First Pulse Survey: Establishing Guidelines and Long-Term Plans with Quantitative Research</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card">
+                <a href="projects/proj3.html" aria-label="View Project 3: Community Research">
+                    <img class="card-background" src="img/project-03-preview.png" alt="Preview of Project 3: Community Impact Research"/>
+                    <div class="card-overlay">
+                        <h3 class="card-title">Empowering Communities: Leveraging Research Methods to Drive Growth and Impact</h3>
+                    </div>
+                </a>
+            </article>
+        </section>
     </main>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-to-top btn btn-primary" aria-label="Scroll to top" style="display: none;">
+        ↑
+    </button>
+
+    <script>
+        // Enhanced scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+                scrollToTopBtn.style.opacity = '1';
+            } else {
+                scrollToTopBtn.style.opacity = '0';
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) {
+                        scrollToTopBtn.style.display = 'none';
+                    }
+                }, 300);
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Enhanced keyboard navigation for profile circle
+        const profileCircle = document.querySelector('.about-me-circle');
+        profileCircle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.location.href = 'about-me.html';
+            }
+        });
+
+        // Preload critical images
+        const images = [
+            'img/project-01-preview.png',
+            'img/project-02-preview.png',
+            'img/project-03-preview.png'
+        ];
+        
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+    <style>
+        /* Scroll to top button styles */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 1000;
+            transition: all var(--transition-medium);
+            opacity: 0;
+        }
+        
+        .scroll-to-top:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+        
+        /* Loading animation */
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+        
+        body:not(.loaded)::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-bg);
+            z-index: 9999;
+            animation: fadeOut 0.5s ease-out 0.5s forwards;
+        }
+        
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .scroll-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+        }
+    </style>
 </body>
 </html>

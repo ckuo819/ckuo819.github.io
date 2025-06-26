@@ -3,18 +3,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>Project 1: Workday UX Research</title>
+    <meta name="description" content="Project 1: Workday UX Research - Enhancing Santa Clara University's Academic Platform through Usability Testing and Interaction Design" />
+    <meta name="keywords" content="UX Research, Usability Testing, Interaction Design, Workday, Santa Clara University, Navigation Design" />
+    <title>Project 1: Workday UX Research - Cindy Kuo | UX Researcher</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/project-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <nav class="navbar-wrapper">
+    <nav class="navbar-wrapper" role="navigation" aria-label="Main navigation">
         <div class="navbar-container">
-            <a href="../index.html">Main Page</a>
-            <a href="../about-me.html">About Me</a>
-            <a href="proj1.html">Project 1</a>
-            <a href="proj2.html">Project 2</a>
-            <a href="proj3.html">Project 3</a>
+            <a href="../index.html" aria-label="Return to main page">Main Page</a>
+            <a href="../about-me.html" aria-label="Learn more about Cindy">About Me</a>
+            <span class="nav-current" aria-current="page">Project 1</span>
+            <a href="proj2.html" aria-label="View Project 2">Project 2</a>
+            <a href="proj3.html" aria-label="View Project 3">Project 3</a>
         </div>
     </nav>
     
@@ -83,21 +87,21 @@
                     </p>
                     <div class="image-grid">
                         <div class="image-group">
-                            <img class="step-image" src="../img/tempimage0pdifb-1-3.png" alt="Step 1 Screenshot"/>
+                            <img class="step-image" src="../img/proj1/step-01-screenshot.png" alt="Step 1 Screenshot"/>
                             <p class="image-caption-small">
                                 <span class="caption-bold">Step 1: The journey begins.</span>
                                 <span class="caption-regular">A student lands on the main dashboard needing to find a specific academic task, such as planning their courses.</span>
                             </p>
                         </div>
                         <div class="image-group">
-                            <img class="step-image" src="../img/tempimage0pdifb-1-4.png" alt="Step 2 Screenshot"/>
+                            <img class="step-image" src="../img/proj1/step-02-screenshot.png" alt="Step 2 Screenshot"/>
                             <p class="image-caption-small">
                                 <span class="caption-bold">Step 2: The first obstacle.</span>
                                 <span class="caption-regular">After opening the menu, the student is met with four vague, high-level categories. They are forced to guess which one contains their goal.</span>
                             </p>
                         </div>
                         <div class="image-group">
-                            <img class="step-image" src="../img/tempimage0pdifb-1-5.png" alt="Step 3 Screenshot"/>
+                            <img class="step-image" src="../img/proj1/step-03-screenshot.png" alt="Step 3 Screenshot"/>
                             <p class="image-caption-small">
                                 <span class="caption-bold">Step 3: Deeper confusion.</span>
                                 <span class="caption-regular">Choosing 'Academics' reveals yet another list of confusing and overlapping sub-categories. Terms like 'Planning & Registration' and 'Academic Records' are not self-evident, leading to more clicks and uncertainty.</span>
@@ -131,7 +135,7 @@
                         <h3 class="subsection-title">Pain Point 3: Ineffective Search Function</h3>
                     </div>
                     <div class="image-content">
-                        <img class="full-width-image" src="../img/tempimage4kudbo-1-1.png" alt="Search Function Screenshot"/>
+                        <img class="full-width-image" src="../img/proj1/search-function-screenshot.png" alt="Search Function Screenshot"/>
                         <p class="image-caption">
                             When searching for a critical term like "final" (expecting exam schedules), the system
                             returned unrelated results, including a student's name. This demonstrated a core failure in the
@@ -197,7 +201,7 @@
                         <h3 class="subsection-title">Solution 1: Improving Vertical Navigation</h3>
                     </div>
                     <div class="image-content">
-                        <img class="solution-image" src="../img/tempimage0pdifb-1-6.png" alt="Improved Navigation Screenshot"/>
+                        <img class="solution-image" src="../img/proj1/improved-navigation-screenshot.png" alt="Improved Navigation Screenshot"/>
                         <p class="image-caption">
                             To solve the confusing navigation, we recommended clarifying the link names and adding helpful
                             descriptions, as shown here. These changes were based on our proposal to use card-sorting to
@@ -212,13 +216,13 @@
                     </div>
                     <div class="solution-grid">
                         <div class="solution-item">
-                            <img class="solution-image" src="../img/tempimagessammu-1.png" alt="Save Progress Feature"/>
+                            <img class="solution-image" src="../img/proj1/save-progress-feature.png" alt="Save Progress Feature"/>
                             <p class="image-caption-small">
                                 A 'Save Progress' feature ensures students don't have to re-enter common filters repeatedly.
                             </p>
                         </div>
                         <div class="solution-item">
-                            <img class="solution-image" src="../img/tempimagessammu-1-1.png" alt="Collapsible Sidebar"/>
+                            <img class="solution-image" src="../img/proj1/collapsible-sidebar.png" alt="Collapsible Sidebar"/>
                             <p class="image-caption-small">
                                 A collapsible sidebar menu allows for quicker navigation and reduces page-to-page clicks.
                             </p>
@@ -231,13 +235,13 @@
                         <h3 class="subsection-title">Solution 3: A Smarter, More Consistent Search</h3>
                     </div>
                     <div class="image-content">
-                        <img class="full-width-image" src="../img/tempimagessammu-1-2.png" alt="Improved Search Results"/>
+                        <img class="full-width-image" src="../img/proj1/improved-search-results.png" alt="Improved Search Results"/>
                         <p class="image-caption">
                             The search bar should give relevant suggestions and improved results for ambiguous terms.
                         </p>
                     </div>
                     <div class="image-content">
-                        <img class="full-width-image" src="../img/tempimagessammu-1-3.png" alt="Search Autocomplete"/>
+                        <img class="full-width-image" src="../img/proj1/search-autocomplete.png" alt="Search Autocomplete"/>
                         <p class="image-caption">
                             Autofill suggestions should match existing, clearly-labeled subcategories to improve discoverability.
                         </p>

@@ -1,98 +1,318 @@
-/* css/about-me.css (最终修复版 v5) */
+/* css/about-me.css - Consistent with Website Design */
 
-/* --- 1. 页面主容器 (Grid布局) --- */
-.about-me-page-container {
+/* --- 1. About Me 页面容器 (与其他页面保持一致的Grid布局) --- */
+.about-me-page {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 90px;
+  animation: fadeIn var(--transition-slow);
+}
+
+.about-me-container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 40px 60px 40px;
+  padding: 40px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 4fr 5fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-    "header header"
-    "character bubble";
-  gap: 20px 60px;
-  align-items: center;
+    "title title"
+    "photo content"
+    "buttons buttons";
+  gap: 40px 60px;
+  align-items: start;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* --- 2. 标题区域 --- */
-.title-wrapper {
-  grid-area: header;
-  background-color: #d0ddd0;
-  border: 1px solid #000000;
-  padding: 40px;
+.title-section {
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
 }
-.title-wrapper .main-title { display: block; font-weight: 700; font-size: clamp(32px, 4vw, 48px); margin-bottom: 20px; }
-.title-wrapper .subtitle { display: block; font-weight: 500; font-size: clamp(20px, 2.5vw, 32px); }
 
-/* --- 3. 插图区域 --- */
-.illustration-area {
-  grid-area: character;
+.page-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 5vw, 48px);
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 15px;
   position: relative;
-  width: 100%;
-  max-width: 450px;
-  aspect-ratio: 1 / 1.2;
-  margin: 0 auto;
 }
-.character-img-container { position: absolute; width: 60%; height: 80%; bottom: 0; left: 0; }
-.character-img { position: absolute; width: 100%; height: 82%; bottom: 0; left: 0; }
-.character-head { position: absolute; width: 46%; height: 36%; top: 0; left: 21%; background-image: url(../img/head-head-long.png); background-size: contain; background-repeat: no-repeat; }
-.character-face { position: absolute; width: 31%; height: 28%; top: 31%; left: 49%; }
 
-/* --- 4. 文字与按钮区域 --- */
-.text-and-buttons-area {
-  grid-area: bubble;
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-green), #6a9b7f);
+  border-radius: 2px;
+}
+
+.page-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 500;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* --- 3. 照片区域 (取消阴影效果) --- */
+.photo-section {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  /* 移除阴影效果 */
+  transition: all var(--transition-medium);
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+}
+
+/* --- 4. 内容区域 --- */
+.content-section {
+  grid-area: content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  animation: fadeInUp 0.6s ease-out 0.5s both;
 }
 
-/* --- (核心修复) “图片方框” 和 “文字方框” --- */
-.speech-bubble-box {
-  background-image: url(../img/speech-bubble.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative; /* 1. 设为父级定位基准 */
-  width: 100%;
-  aspect-ratio: 1020 / 687;
+.content-block {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 248, 240, 0.9) 100%);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-green);
+  transition: all var(--transition-medium);
 }
 
-.introduction-text { 
-  position: absolute;   /* 2. 将文字框设为绝对定位，相对于父级 */
+.content-block:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-light);
+  border-left-color: #6a9b7f;
+}
 
-  /* --- (最终版) 基于图片精确计算的比例 --- */
-  top: 8%;           
-  left: 25%;         
-  width: 65%;        
-  height: 65%;        
-  
-  /* 使用 Flexbox 让文字在自己的方框内居中对齐 */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--accent-green);
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.section-content {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--text-dark);
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- 5. 按钮区域 --- */
+.buttons-section {
+  grid-area: buttons;
   display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+
+.action-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: left; /* 文字本身左对齐，但整个块是居中的 */
-
-  font-weight: 400; 
-  font-size: clamp(10px, 1.5vw, 25px); /* 允许字体变得更小以适应容器 */
-  line-height: 1.5; /* 增加行高，使其更易读 */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  letter-spacing: 0.5px;
+  min-width: 180px;
 }
-/* --- 修复结束 --- */
 
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #6a9b7f 100%);
+  color: var(--white);
+  box-shadow: var(--shadow-light);
+}
 
-.button-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-.button-link { padding: 15px 30px; background-color: #d0ddd0; border-radius: 20px; border: 1px solid #000000; text-align: center; font-size: clamp(18px, 2vw, 24px); font-weight: 700; transition: all 0.3s ease; }
-.button-link:hover { background-color: #80b09f; color: #ffffff; }
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
 
-/* --- 5. 响应式调整 (针对小屏幕) --- */
-@media screen and (max-width: 900px) {
-  .about-me-page-container {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 20px 40px 20px;
+.btn-secondary {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 248, 240, 0.9) 100%);
+  color: var(--accent-green);
+  border: 2px solid var(--accent-green);
+  box-shadow: var(--shadow-light);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #6a9b7f 100%);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* --- 6. 动画效果 --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  .illustration-area { order: 2; width: 80%; max-width: 350px; margin: 40px auto 0 auto; }
-  .text-and-buttons-area { order: 1; }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- 7. 响应式设计 --- */
+@media screen and (max-width: 1024px) {
+  .about-me-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "photo"
+      "content"
+      "buttons";
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-container {
+    padding: 30px 20px;
+    gap: 25px;
+  }
+  
+  .profile-image {
+    max-width: 360px;
+    height: auto;
+  }
+  
+  .content-block {
+    padding: 25px 20px;
+  }
+  
+  .section-content {
+    font-size: 16px;
+  }
+  
+  .buttons-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-container {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  
+  .profile-image {
+    max-width: 320px;
+    height: auto;
+  }
+  
+  .content-block {
+    padding: 20px 15px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .section-content {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-me-container {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+  }
+  
+  .page-subtitle {
+    font-size: 16px;
+  }
+  
+  .profile-image {
+    max-width: 280px;
+  }
+  
+  .content-block {
+    padding: 15px 12px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .section-content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .action-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-width: 150px;
+  }
 }

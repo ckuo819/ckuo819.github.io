@@ -1,55 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>About Me</title>
+    <meta name="description" content="About Cindy Kuo - UX Researcher with expertise in psychology, research methods, and data analysis. Learn about my approach to user research and design." />
+    <meta name="keywords" content="Cindy Kuo, UX Researcher, Psychology, User Research, About Me" />
+    <title>About Me - Cindy Kuo | UX Researcher</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/about-me.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <nav class="navbar-wrapper">
+    <nav class="navbar-wrapper" role="navigation" aria-label="Main navigation">
         <div class="navbar-container">
-            <a href="index.html">Main Page</a>
-            <a href="about-me.html">About Me</a>
-            <a href="projects/proj1.html">Project 1</a>
-            <a href="projects/proj2.html">Project 2</a>
-            <a href="projects/proj3.html">Project 3</a>
+            <a href="index.html" aria-label="Return to main page">Main Page</a>
+            <span class="nav-current" aria-current="page">About Me</span>
+            <a href="projects/proj1.html" aria-label="View Project 1">Project 1</a>
+            <a href="projects/proj2.html" aria-label="View Project 2">Project 2</a>
+            <a href="projects/proj3.html" aria-label="View Project 3">Project 3</a>
         </div>
     </nav>
-    
-    <main class="about-me-page-container">
 
-        <header class="title-wrapper">
-            <p class="title-text">
-                <span class="main-title">About Me</span>
-                <span class="subtitle">Learning through people, designing through research. I'm here to ask questions, listen carefully, and create value that lasts.</span>
-            </p>
-        </header>
+    <div class="about-me-page">
+        <div class="about-me-container">
+            <!-- 标题区域 -->
+            <div class="title-section">
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">Learning through people, designing through research.</p>
+            </div>
 
-        <div class="illustration-area">
-            <div class="character-img-container">
-              <img class="character-img" src="img/pose-sitting-pose-sitting-hands-back-2.png" alt="Illustration of a person sitting" />
-              <div class="character-head">
-                  <img class="character-face" src="img/face.png" alt="Face illustration" />
-              </div>
+            <!-- 照片区域 -->
+            <div class="photo-section">
+                <img src="img/aboutMe/profile-about.png" alt="Cindy Kuo Profile Photo" class="profile-image">
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="content-section">
+                <div class="content-block">
+                    <h2 class="section-title">My Approach</h2>
+                    <p class="section-content">
+                        Hi, I'm Cindy! I'm passionate about understanding people—what drives them, what challenges 
+                        they face, and how we can create solutions that truly make a difference. My background in 
+                        psychology and social science gives me a unique lens for UX research, where I focus on 
+                        uncovering the "why" behind user behaviors and translating those insights into actionable design decisions.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h2 class="section-title">My Focus</h2>
+                    <p class="section-content">
+                        I believe the best research doesn't just solve immediate problems—it creates long-term impact. 
+                        Whether I'm designing surveys for institutional research, evaluating nonprofit programs, or 
+                        conducting user interviews, I'm always thinking about how to bridge user needs with organizational 
+                        goals. I thrive in collaborative environments where diverse perspectives come together to create 
+                        meaningful change.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 按钮区域 -->
+            <div class="buttons-section">
+                <a href="projects/proj1.html" class="action-btn btn-primary">View my projects</a>
+                <a href="img/resume_cindy.pdf" class="action-btn btn-secondary" target="_blank">View my resume</a>
             </div>
         </div>
-        
-        <div class="text-and-buttons-area">
-            <div class="speech-bubble-box">
-                <p class="introduction-text">
-                    Hi, I'm Cindy. I combine psychology, social science, and UX research to better understand how people
-                    interact with systems—and how we can design those systems to support real needs. I care about long-term
-                    impact, especially when it means making something clearer, fairer, or more human.
-                </p>
-            </div>
-            <div class="button-container">
-                <a class="button-link" href="projects/proj1.html">View my project</a>
-                <a class="button-link" href="https://drive.google.com/file/d/1oyZL3xB2ZgQnUL2hiSXK-bS3DoM0fQ_Z/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my resume</a>
-            </div>
-        </div>
-
-    </main>
+    </div>
 </body>
 </html>
