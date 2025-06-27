@@ -22,9 +22,39 @@
         </div>
     </nav>
     
+    <!-- Mobile Navigation Toggle -->
+    <button class="project-nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+    </button>
+    
+    <!-- Left Navigation Sidebar -->
+    <nav class="project-nav-sidebar" id="projectNav">
+        <h3 class="project-nav-title">Project 3</h3>
+        <ul class="project-nav-list">
+            <li class="project-nav-item">
+                <a href="#project-name" class="project-nav-link">Project Name</a>
+            </li>
+            <li class="project-nav-item">
+                <a href="#role" class="project-nav-link">Role</a>
+            </li>
+            <li class="project-nav-item">
+                <a href="#problem" class="project-nav-link">Problem</a>
+            </li>
+            <li class="project-nav-item">
+                <a href="#approach" class="project-nav-link">Approach</a>
+            </li>
+            <li class="project-nav-item">
+                <a href="#solution" class="project-nav-link">Solution</a>
+            </li>
+            <li class="project-nav-item">
+                <a href="#reflection" class="project-nav-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+    
     <div class="project-page">
         <div class="project-container">
-            <div class="project-tagline">
+            <div id="project-name" class="project-tagline">
                 <div class="project-tagline-text">Project 3</div>
             </div>
             
@@ -42,7 +72,7 @@
                 <div class="divider-line"></div>
             </div>
             
-            <div class="project-info-grid">
+            <div id="role" class="project-info-grid">
                 <div class="info-item">
                     <div class="info-label">Timeline</div>
                     <div class="info-content">6 months (Spring 2025)</div>
@@ -65,7 +95,7 @@
                 <div class="divider-line"></div>
             </div>
             
-            <section class="section-container">
+            <section id="problem" class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">The Problem: Measuring Impact and Ensuring Equitable Access</h2>
                 </div>
@@ -116,7 +146,7 @@
                 </div>
             </section>
             
-            <section class="section-container">
+            <section id="approach" class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">My Approach: A Community-Focused Evaluation</h2>
                 </div>
@@ -157,7 +187,7 @@
                 <div class="divider-line"></div>
             </div>
             
-            <section class="section-container">
+            <section id="solution" class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">The Solution: Actionable, Evidence-Based Recommendations</h2>
                 </div>
@@ -238,7 +268,7 @@
                 <div class="divider-line"></div>
             </div>
             
-            <section class="section-container">
+            <section id="reflection" class="section-container">
                 <div class="section-header">
                     <h2 class="section-title">Reflection</h2>
                 </div>
@@ -252,5 +282,101 @@
             </section>
         </div>
     </div>
+
+    <script>
+        // Project Navigation Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('navToggle');
+            const projectNav = document.getElementById('projectNav');
+            const navLinks = document.querySelectorAll('.project-nav-link');
+            
+            // Mobile navigation toggle
+            navToggle.addEventListener('click', function() {
+                projectNav.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+            
+            // Close navigation when clicking outside (mobile)
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1024) {
+                    if (!projectNav.contains(e.target) && !navToggle.contains(e.target)) {
+                        projectNav.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 90; // Account for fixed navbar
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile nav after clicking
+                        if (window.innerWidth <= 1024) {
+                            projectNav.classList.remove('active');
+                            navToggle.classList.remove('active');
+                        }
+                    }
+                });
+            });
+            
+            // Update active navigation link based on scroll position
+            function updateActiveNavLink() {
+                const scrollPosition = window.scrollY + 150; // Add offset for better UX
+                const sections = ['project-name', 'role', 'problem', 'approach', 'solution', 'reflection'];
+                
+                let currentSection = '';
+                
+                sections.forEach(sectionId => {
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+                        
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            currentSection = sectionId;
+                        }
+                    }
+                });
+                
+                // Update active class
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Throttled scroll event listener
+            let scrollTimer;
+            window.addEventListener('scroll', function() {
+                if (scrollTimer) {
+                    clearTimeout(scrollTimer);
+                }
+                scrollTimer = setTimeout(updateActiveNavLink, 10);
+            });
+            
+            // Initial call to set active link
+            updateActiveNavLink();
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 1024) {
+                    projectNav.classList.remove('active');
+                    navToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
