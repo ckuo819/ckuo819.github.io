@@ -634,12 +634,13 @@
 .solution-image {
     width: 100%;
     max-width: 500px;
-    height: 350px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-medium);
     transition: all var(--transition-medium);
     margin: 0 auto;
+    display: block;
 }
 
 .solution-image:hover {
@@ -725,7 +726,7 @@
   width: 100%;
   max-width: 387px;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
   box-shadow: var(--shadow-light);
   transition: transform var(--transition-medium);
@@ -810,7 +811,7 @@
     100% {
         transform: scale(1);
         opacity: 1;
-    }
+}
 }
 
 /* === Enhanced Video Container Styles === */
@@ -840,7 +841,7 @@
 .full-width-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: var(--shadow-medium);
     margin: 30px 0;
@@ -871,7 +872,7 @@
         flex: 1 1 calc(50% - 12px);
         min-width: 200px;
     }
-    
+
     .recommendation-card {
         flex: 1 1 calc(50% - 12px);
         min-width: 230px;
@@ -931,7 +932,7 @@
     
     .process-arrow {
         transform: rotate(90deg);
-        font-size: 20px;
+  font-size: 20px;
     }
     
     .solution-grid {
@@ -946,34 +947,36 @@
 
 @media screen and (max-width: 600px) {
     .process-flow {
-        padding: 20px 15px;
+        flex-direction: column;
+        gap: 15px;
     }
-    
+
     .process-step {
-        padding: 18px 12px;
+        min-width: 100%;
     }
-    
+
     .step-title {
         font-size: 15px;
     }
-    
+
     .process-arrow {
-        font-size: 18px;
+        transform: rotate(90deg);
     }
-    
+
     .solution-grid {
-        flex-direction: column;
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
-    
+
     .solution-item {
-        flex: none;
-        min-width: auto;
         width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
-    
+
     .solution-image {
-        height: 300px;
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -1020,7 +1023,8 @@
     }
     
     .solution-image {
-        height: 250px;
+        max-width: 100%;
+        width: 100%;
     }
 }
 

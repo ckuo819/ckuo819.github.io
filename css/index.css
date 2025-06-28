@@ -2,7 +2,7 @@
 
 /* --- 1. 主页容器 (Grid布局) --- */
 .intro-page-container {
-  width: 100%;
+  width: 100%; 
   max-width: 1440px;
   margin: 0 auto;
   padding: 60px 40px 80px 40px;
