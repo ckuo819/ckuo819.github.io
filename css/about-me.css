@@ -19,13 +19,14 @@
   padding: 40px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "title title"
+    "personal-info personal-info"
     "photo content"
     "buttons buttons";
-  gap: 40px 60px;
+  gap: 50px 60px;
   align-items: start;
   animation: fadeInUp 0.8s ease-out;
 }
@@ -100,17 +101,38 @@
 }
 
 .content-block {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 248, 240, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 240, 0.95) 100%);
   padding: 30px;
-  border-radius: var(--border-radius);
-  border-left: 4px solid var(--accent-green);
+  border-radius: 15px;
+  border: 2px solid rgba(128, 176, 159, 0.3);
   transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.content-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-green), #6a9b7f);
+  transform: scaleX(0);
+  transition: transform var(--transition-medium);
+  transform-origin: left;
 }
 
 .content-block:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-light);
-  border-left-color: #6a9b7f;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-green);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 240, 1) 100%);
+}
+
+.content-block:hover::before {
+  transform: scaleX(1);
 }
 
 .section-title {
@@ -131,7 +153,166 @@
   margin: 0;
 }
 
-/* --- 5. 按钮区域 --- */
+/* --- 5. 个人信息区域 --- */
+.personal-info-section {
+  grid-area: personal-info;
+  margin-top: 0;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.personal-info-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 248, 240, 0.95) 100%);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid rgba(128, 176, 159, 0.3);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-green), #6a9b7f);
+  transform: scaleX(0);
+  transition: transform var(--transition-medium);
+  transform-origin: left;
+}
+
+.info-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-green);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 240, 1) 100%);
+}
+
+.info-item:hover::before {
+  transform: scaleX(1);
+}
+
+.info-title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+}
+
+.info-title::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128, 176, 159, 0.15);
+  transition: all var(--transition-fast);
+}
+
+.education-entry:last-child {
+  border-bottom: none;
+}
+
+.education-entry:hover {
+  background: rgba(128, 176, 159, 0.05);
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.school-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.institution {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.year {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-green);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.degree {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: 14px;
+  padding: 0;
+  border-bottom: none;
+  text-align: right;
+  flex-shrink: 0;
+  max-width: 200px;
+  line-height: 1.3;
+}
+
+.focus-area, .expertise {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.5;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 176, 159, 0.15);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.focus-area:last-child, .expertise:last-child {
+  border-bottom: none;
+}
+
+.focus-area:hover, .expertise:hover {
+  color: var(--accent-green);
+  transform: translateX(8px);
+  background: rgba(128, 176, 159, 0.05);
+  border-radius: 4px;
+  padding-left: 8px;
+}
+
+/* --- 6. 按钮区域 --- */
 .buttons-section {
   grid-area: buttons;
   display: flex;
@@ -187,7 +368,7 @@
   box-shadow: var(--shadow-medium);
 }
 
-/* --- 6. 动画效果 --- */
+/* --- 7. 动画效果 --- */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -208,39 +389,107 @@
   }
 }
 
-/* --- 7. 响应式设计 --- */
+/* --- 8. 响应式设计 --- */
 @media screen and (max-width: 1024px) {
   .about-me-container {
     grid-template-columns: 1fr;
     grid-template-areas:
       "title"
+      "personal-info"
       "photo"
       "content"
       "buttons";
-    gap: 30px;
-    text-align: center;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .personal-info-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .info-item {
+    padding: 25px;
+  }
+
+  .info-title {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
   
   .profile-image {
-    max-width: 420px;
-    height: auto;
-    margin: 0 auto;
+    max-width: 400px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about-me-container {
-    padding: 30px 20px;
-    gap: 25px;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .personal-info-section {
+    margin-bottom: 15px;
+  }
+
+  .personal-info-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .info-item {
+    padding: 20px;
+  }
+
+  .info-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  .info-title::before {
+    width: 6px;
+    height: 6px;
+  }
+
+  .education-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .school-info {
+    width: 100%;
+  }
+
+  .institution {
+    font-size: 16px;
+  }
+
+  .degree {
+    font-size: 13px;
+    text-align: left;
+    max-width: 100%;
+    margin-top: 4px;
+  }
+
+  .degree, .focus-area, .expertise {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .year {
+    font-size: 12px;
   }
   
   .profile-image {
-    max-width: 360px;
-    height: auto;
+    max-width: 350px;
   }
   
   .content-block {
-    padding: 25px 20px;
+    padding: 25px;
   }
   
   .section-content {
@@ -248,29 +497,76 @@
   }
   
   .buttons-section {
-    flex-direction: column;
-    align-items: center;
+    gap: 15px;
   }
   
   .action-btn {
-    width: 100%;
-    max-width: 280px;
+    min-width: 160px;
+    padding: 12px 25px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .about-me-container {
-    padding: 20px 15px;
-    gap: 20px;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .personal-info-section {
+    margin-bottom: 10px;
+  }
+
+  .personal-info-content {
+    gap: 15px;
+  }
+
+  .info-item {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .info-item:hover {
+    transform: translateY(-4px);
+  }
+
+  .info-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .education-entry {
+    padding: 8px 0;
+    gap: 6px;
+  }
+
+  .institution {
+    font-size: 15px;
+  }
+
+  .degree {
+    font-size: 12px;
+  }
+
+  .degree, .focus-area, .expertise {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .year {
+    font-size: 11px;
+  }
+
+  .focus-area:hover, .expertise:hover {
+    transform: translateX(4px);
+    padding-left: 4px;
   }
   
   .profile-image {
-    max-width: 320px;
-    height: auto;
+    max-width: 280px;
   }
   
   .content-block {
-    padding: 20px 15px;
+    padding: 20px;
   }
   
   .section-title {
@@ -278,14 +574,14 @@
   }
   
   .section-content {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .about-me-container {
-    padding: 15px 10px;
-    gap: 15px;
+    padding: 10px;
+    gap: 20px;
   }
   
   .page-title {
@@ -295,13 +591,53 @@
   .page-subtitle {
     font-size: 16px;
   }
+
+  .personal-info-section {
+    margin-bottom: 8px;
+  }
+
+  .personal-info-content {
+    gap: 12px;
+  }
+
+  .info-item {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .info-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .education-entry {
+    padding: 6px 0;
+    gap: 4px;
+  }
+
+  .institution {
+    font-size: 15px;
+  }
+
+  .degree {
+    font-size: 11px;
+  }
+
+  .degree, .focus-area, .expertise {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .year {
+    font-size: 10px;
+  }
   
   .profile-image {
-    max-width: 280px;
+    max-width: 250px;
   }
   
   .content-block {
-    padding: 15px 12px;
+    padding: 15px;
   }
   
   .section-title {
@@ -310,12 +646,11 @@
   
   .section-content {
     font-size: 14px;
-    line-height: 1.6;
   }
   
   .action-btn {
-    padding: 12px 20px;
+    min-width: 140px;
+    padding: 10px 20px;
     font-size: 14px;
-    min-width: 150px;
   }
 }
