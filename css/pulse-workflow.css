@@ -1,0 +1,28 @@
+/* Pulse Survey: a project lifecycle with a concrete output at each phase. */
+.workflow-intro{margin-top:35px}
+.workflow-intro>.eyebrow{font-size:10px;margin-bottom:15px}
+.pulse-lifecycle{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
+.pulse-lifecycle a{display:flex;flex-direction:column;height:100%;padding:19px 15px;background:var(--peach);border:1px solid transparent;border-radius:7px;transition:border-color .2s}
+.pulse-lifecycle a:hover{border-color:#b49a88}
+.pulse-lifecycle li:last-child a{background:#edf3dd}
+.pulse-lifecycle .phase-index{font-size:10px;letter-spacing:.12em;color:#795a49;margin-bottom:17px}
+.pulse-lifecycle strong{font-weight:500;font-size:15px;line-height:1.45;margin-bottom:8px}
+.pulse-lifecycle a>span:last-child{font-size:11px;line-height:1.6;color:var(--muted)}
+.phase-output{display:grid;grid-template-columns:105px 1fr;gap:20px;padding:21px 24px;background:#edf3dd;border-left:3px solid #a5bd60;border-radius:0 6px 6px 0;margin:25px 0 0}
+.phase-output>span{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1.6;padding-top:3px;color:#49552c}
+.phase-output p{font-size:14px;line-height:1.7;color:var(--ink)}
+.stakeholder-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:25px}
+.stakeholder-map>div{padding:24px;background:#fffefa;border:1px solid var(--line);border-radius:7px}
+.stakeholder-map>div:nth-child(2){background:var(--lavender)}
+.stakeholder-map .eyebrow{display:block;font-size:9px;margin-bottom:16px}
+.stakeholder-map h3{font-size:22px}
+.stakeholder-map p{font-size:14px;line-height:1.7}
+.handoff-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:27px 0}
+.handoff-grid>div{border-top:2px solid #b49a88;padding-top:19px}
+.handoff-grid h3{font-size:20px}
+.handoff-grid p{font-size:14px;line-height:1.7}
+.project-reflection{padding-top:26px;margin-top:30px;border-top:1px solid var(--line);scroll-margin-top:15px}
+.project-reflection>.eyebrow{font-size:10px;color:#705678;margin-bottom:14px}
+.project-reflection h3{font-size:26px}
+@media(max-width:1050px){.pulse-lifecycle{grid-template-columns:repeat(3,minmax(0,1fr))}.pulse-lifecycle a{padding:18px}.pulse-lifecycle .phase-index{margin-bottom:10px}.stakeholder-map>div{padding:20px}}
+@media(max-width:600px){.workflow-intro{margin-top:27px}.pulse-lifecycle{grid-template-columns:repeat(2,minmax(0,1fr))}.pulse-lifecycle strong{font-size:14px}.phase-output{grid-template-columns:1fr;gap:8px;padding:20px}.phase-output p{font-size:14px}.stakeholder-map,.handoff-grid{grid-template-columns:1fr}.stakeholder-map>div{padding:22px}.stakeholder-map h3{font-size:22px}.stakeholder-map p,.handoff-grid p{font-size:14px}.project-reflection h3{font-size:24px}}
