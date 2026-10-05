@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 450" fill="none">
+  <title>Shopping, payment choices, and the research connecting them</title>
+  <desc>A conceptual illustration of a shopping phone, a payment wallet, and research notes connected by a dotted journey. This is an illustration of the study scope, not a Google product screen.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#a7b4a1" opacity=".25"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#2c3d32" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="640" height="450" fill="url(#dots)"/>
+  <circle cx="322" cy="210" r="166" fill="#d6e3ca"/>
+  <circle cx="322" cy="210" r="195" stroke="#9baa91" stroke-dasharray="3 9"/>
+  <path d="M90 220C27 196 30 352 150 366c126 14 297 59 383-40 72-83 5-209-60-181" stroke="#758963" stroke-width="2" stroke-dasharray="6 7"/>
+  <path d="m465 146 12-8-2 15" stroke="#758963" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- A deliberately abstract storefront; no internal interface is reproduced. -->
+  <g transform="translate(202 44) rotate(-7 106 162)" filter="url(#shadow)">
+    <rect width="212" height="334" rx="30" fill="#332635"/>
+    <rect x="9" y="9" width="194" height="316" rx="22" fill="#fffdf7"/>
+    <rect x="76" y="16" width="59" height="9" rx="4.5" fill="#332635"/>
+    <path d="M29 42h14M29 47h10" stroke="#332635" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="177" cy="44" r="6" stroke="#332635" stroke-width="2"/>
+    <path d="m181 49 4 5" stroke="#332635" stroke-width="2" stroke-linecap="round"/>
+    <rect x="23" y="66" width="166" height="138" rx="12" fill="#eee8f2"/>
+    <path d="m71 170 12-70h48l13 70z" fill="#baa2c7" stroke="#59405d" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M94 107V96a13 13 0 0 1 26 0v11" stroke="#59405d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M93 138c7 8 19 8 27 0" stroke="#fffdf7" stroke-width="3" stroke-linecap="round"/>
+    <path d="m158 83 1 7 7 1-7 2-1 7-2-7-7-2 7-1z" fill="#59405d"/>
+    <rect x="23" y="220" width="99" height="7" rx="3.5" fill="#57485b"/>
+    <rect x="23" y="237" width="137" height="5" rx="2.5" fill="#d8d0da"/>
+    <rect x="23" y="249" width="83" height="5" rx="2.5" fill="#d8d0da"/>
+    <rect x="23" y="272" width="166" height="32" rx="16" fill="#dcef9c"/>
+    <path d="M93 288h25m-6-6 6 6-6 6" stroke="#332635" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="79" y="314" width="54" height="3" rx="1.5" fill="#c5bec7"/>
+  </g>
+  <!-- Diary notes, linked to the shopping journey. -->
+  <g transform="translate(32 87) rotate(-10 84 65)" filter="url(#shadow)">
+    <rect width="166" height="130" rx="12" fill="#fffdf7" stroke="#c7d0bf"/>
+    <rect x="17" y="19" width="27" height="27" rx="8" fill="#e8d4c5"/>
+    <path d="M25 27h12M25 32h12M25 37h7" stroke="#875c43" stroke-width="1.7" stroke-linecap="round"/>
+    <rect x="54" y="23" width="84" height="5" rx="2.5" fill="#5b6554"/>
+    <rect x="54" y="35" width="51" height="4" rx="2" fill="#c8d0c2"/>
+    <rect x="17" y="62" width="132" height="3" rx="1.5" fill="#d4dacf"/>
+    <rect x="17" y="75" width="119" height="3" rx="1.5" fill="#d4dacf"/>
+    <rect x="17" y="88" width="127" height="3" rx="1.5" fill="#d4dacf"/>
+    <rect x="16" y="100" width="91" height="14" rx="3" fill="#dcef9c"/>
+  </g>
+  <!-- Wallet and payment choice. -->
+  <g transform="translate(403 206) rotate(10 101 68)" filter="url(#shadow)">
+    <rect x="10" y="-25" width="151" height="100" rx="13" fill="#d4b4e3" stroke="#71567b" stroke-width="2"/>
+    <rect x="28" y="-8" width="26" height="19" rx="4" fill="#f2e7bf"/>
+    <path d="M117-4c6 3 6 12 0 15m7-21c12 6 12 25 0 31" stroke="#71567b" stroke-width="2" stroke-linecap="round"/>
+    <rect y="26" width="201" height="115" rx="16" fill="#3d4d3b"/>
+    <path d="M13 39h174" stroke="#687b5b" stroke-width="2"/>
+    <rect x="154" y="62" width="59" height="47" rx="10" fill="#dcef9c"/>
+    <circle cx="172" cy="85" r="5" fill="#3d4d3b"/>
+    <circle cx="32" cy="116" r="4" fill="#7e9270"/>
+    <circle cx="45" cy="116" r="4" fill="#7e9270"/>
+    <circle cx="58" cy="116" r="4" fill="#7e9270"/>
+  </g>
+  <g transform="translate(464 76)">
+    <circle r="35" fill="#fffdf7" stroke="#bbc9ae"/>
+    <path d="M-14 3c-10-12 8-23 14-9 6-14 24-3 14 9L0 17z" fill="#c9957f"/>
+  </g>
+  <g transform="translate(106 310)"><circle r="28" fill="#dcef9c"/><path d="m-11 1 7 7L12-8" stroke="#485438" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M550 160v24m-12-12h24M125 43v18m-9-9h18" stroke="#7c657f" stroke-width="2" stroke-linecap="round"/>
+</svg>
