@@ -11,8 +11,20 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/portfolio.css?v=20261005">
+  <link rel="stylesheet" href="css/about-sakura.css?v=20261007">
 </head>
-<body>
+<body class="about-page">
+<div class="sakura-field" aria-hidden="true">
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+  <span class="sakura-petal"><i></i></span>
+</div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -26,7 +38,7 @@
   </div>
 </header>
 <main id="main" class="wrap">
-  <section class="page-intro"><p class="eyebrow">A little about me</p><h1>I start with a question.<br><em>Then I listen.</em></h1><p class="lead">I’m Cindy, a UX researcher who brings a psychology lens and a mix of methods to understanding people.</p></section>
+  <section class="page-intro"><img class="sakura-sprig" src="img/sakura-sprig.svg" width="240" height="190" alt="" aria-hidden="true"><p class="eyebrow">A little about me</p><h1>I start with a question.<br><em>Then I listen.</em></h1><p class="lead">I’m Cindy, a UX researcher who brings a psychology lens and a mix of methods to understanding people.</p></section>
   <div class="about-grid">
     <figure class="about-portrait"><img class="candid-portrait" src="img/cindy-home.jpg" width="960" height="720" alt="Cindy Kuo smiling outdoors among pink flower petals"><figcaption>People first.<br>Evidence always.</figcaption></figure>
     <section class="about-story" aria-labelledby="story-title"><h2 id="story-title">The “why” is where I begin.</h2><p>What makes a simple task feel difficult? Whose needs get missed? What happens after an experience ends? These are the kinds of questions that pull me into research.</p><p>My background in <strong>psychology and social science</strong> helps me explore behavior in context. I combine qualitative inquiry with quantitative analysis to understand both individual experiences and broader patterns.</p><p><strong>I’m comfortable navigating ambiguity.</strong> At <a class="evidence-link" href="projects/google-payments.html#context">Google Consumer Payments</a>, my internship project began with just a title: “Gen Z, AI, and Payments.” I turned that open-ended starting point into research questions and a mixed-methods study, then translated the evidence into opportunities and a research roadmap for product partners.</p><p>I combined diary research, interviews, and a survey, and shared the work with cross-functional teams and senior leadership. In our <a class="evidence-link" href="projects/proj1.html#insights">Workday project</a>, I also helped turn scattered student feedback into a focused direction for improving navigation and search. I care about making research useful: a clearer design decision, a better feedback process, or a more informed use of resources.</p><p>I’m now studying <strong>Integrated Innovation for Products &amp; Services at Carnegie Mellon</strong>, a program spanning design, engineering, and business. I’m focusing on <strong>UX research</strong>, with an interest in product insights, customer experience, and consulting roles where understanding people informs strategy.</p><div class="actions"><a class="button" href="index.html#work">See my work <span aria-hidden="true">↗</span></a><a class="text-link" href="img/resume_cindy.pdf" target="_blank" rel="noopener" aria-label="View resume, PDF, opens in a new tab">View resume <span aria-hidden="true">↗</span></a></div></section>
@@ -43,5 +55,11 @@
   </div>
 </section>
 <footer class="wrap site-footer"><p>© 2026 Cindy Kuo<br>Always curious. Thoughtfully made.</p><a href="index.html#work">Back to selected work ↑</a></footer>
+<button class="petal-control" type="button" hidden>
+  <svg class="pause-icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 2h2v8H3zm4 0h2v8H7z"/></svg>
+  <svg class="play-icon" viewBox="0 0 12 12" aria-hidden="true"><path d="m4 2 6 4-6 4z"/></svg>
+  <span>Pause petals</span>
+</button>
+<script src="js/about-sakura.js?v=20261007" defer></script>
 </body>
 </html>
