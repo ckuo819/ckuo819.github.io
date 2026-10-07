@@ -36,3 +36,5 @@ Case studies lead with the outcome, role, and scope, followed by the problem, re
 The Google case is a selected process overview. Internal presentation photos, document identifiers, study findings, specific competitor conclusions, and product recommendations are excluded. Prior resume-level scope is retained without implying company disclosure approval.
 
 The Pulse Survey case uses `css/pulse-workflow.css` to present scope, planning, review, launch, analysis, and handoff as a project lifecycle. The new portraits are browser-compatible exports of user-provided photos; originals remain unchanged. The 826LA case header uses the organization’s logo from its [official website](https://www.826la.org/), downloaded on October 4, 2026. Its existing research charts remain in the evidence section.
+
+The About page adds original cherry-blossom SVG accents and a sparse CSS petal animation via `css/about-sakura.css`. `js/about-sakura.js` provides a pause/resume control and pauses motion in background tabs. Reduced-motion and print layouts omit the falling petals; the static illustration remains available without JavaScript.
