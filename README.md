@@ -38,3 +38,13 @@ The Google case is a selected process overview. Internal presentation photos, do
 The Pulse Survey case uses `css/pulse-workflow.css` to present scope, planning, review, launch, analysis, and handoff as a project lifecycle. The new portraits are browser-compatible exports of user-provided photos; originals remain unchanged. The 826LA case header uses the organization’s logo from its [official website](https://www.826la.org/), downloaded on October 4, 2026. Its existing research charts remain in the evidence section.
 
 The About page adds original cherry-blossom SVG accents and a sparse CSS petal animation via `css/about-sakura.css`. `js/about-sakura.js` provides a pause/resume control and pauses motion in background tabs. Reduced-motion and print layouts omit the falling petals; the static illustration remains available without JavaScript.
+
+## UX design explorations
+
+The homepage keeps research first and adds a distinct Design explorations section. `projects/melo-agent.html` presents the independent local-agent avatar project; `projects/uber-assist.html` presents the CMU Course 601 support concept and subsequent interactive refinement. Their shared layout and progressive enhancements are in `css/design-lab.css` and `js/design-lab.js`.
+
+Melo uses selected assets from the supplied six-state package, including restored V3 working/attention animations. Original files are unchanged; still artwork is exported as WebP. Animation is loaded for the selected state only, respects reduced-motion preferences, has an explicit motion control, and stops when the preview is offscreen or the tab is hidden.
+
+The Uber case uses selected course PDF pages, historical prototype screenshots, and a clearly labeled illustrated walkthrough. The original prototype is maintained separately and remains under its existing access settings. This update does not modify or republish that application. Interface examples are simulations, not a real support service or statements of current Uber policy. Planned sample sizes and success measures are not presented as achieved results.
+
+Both cases distinguish Cindy’s design direction and decisions from AI-assisted artwork/implementation, and label future validation as future work.
