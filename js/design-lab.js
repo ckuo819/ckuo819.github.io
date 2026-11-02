@@ -9,7 +9,7 @@
       thinking: ['Thinking', 'The agent is considering the user’s input. A measured head tilt gives thinking its own expression before the task begins.', 'Melo tilts its head while thinking'],
       working: ['Working', 'The agent is carrying out a task. Headphones and typing make active work distinct from thinking or waiting.', 'Melo wears headphones and types at a laptop'],
       attention: ['Needs your input', 'The agent needs permission or has a question. A gentle paw tap asks the user to respond before the agent continues.', 'Melo raises a front paw to ask for attention'],
-      idle_rest: ['Resting', 'The agent is open, with no task underway. Quiet breathing gives Melo a calm presence, like a digital pet resting nearby.', 'Melo rests with eyes closed'],
+      idle_rest: ['Resting', 'The agent is open, with no task underway. Quiet breathing gives Melo a calm, familiar presence while the agent waits for the next task.', 'Melo rests with eyes closed'],
       idle_play: ['Playing', 'A second expression of idle time: Melo plays with a toy. The agent is still available, with no task running—just a little companionship.', 'Melo plays with a rope toy']
     };
     const image = document.getElementById('melo-avatar');
