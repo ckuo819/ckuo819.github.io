@@ -5,12 +5,12 @@
   const demo = document.querySelector('[data-melo-demo]');
   if (demo) {
     const states = {
-      startup: ['Starting up', 'Melo gets up, shakes out, and settles into a seated pose. A one-time arrival gives the session a beginning.', 'Melo gets up and settles into a seated pose'],
-      thinking: ['Thinking', 'A measured head tilt gives consideration its own expression, separate from actively carrying out a task.', 'Melo tilts its head while thinking'],
-      working: ['Working', 'Headphones and a laptop make active work visible, distinct from thinking or waiting.', 'Melo wears headphones and types at a laptop'],
-      attention: ['Needs your input', 'A gentle paw tap asks for attention. This cue can interrupt another state when the agent needs a response.', 'Melo raises a front paw to ask for attention'],
-      idle_rest: ['Resting', 'Quiet breathing gives idle time a calm presence without suggesting that a task is still running.', 'Melo rests with eyes closed'],
-      idle_play: ['Playing', 'A small toy brings personality to an idle moment while staying distinct from work.', 'Melo plays with a rope toy']
+      startup: ['Starting up', 'When the user opens the agent, Melo gets up, shakes out, and settles into a seated pose. A one-time arrival begins the session.', 'Melo gets up and settles into a seated pose'],
+      thinking: ['Thinking', 'The agent is considering the user’s input. A measured head tilt gives thinking its own expression before the task begins.', 'Melo tilts its head while thinking'],
+      working: ['Working', 'The agent is carrying out a task. Headphones and typing make active work distinct from thinking or waiting.', 'Melo wears headphones and types at a laptop'],
+      attention: ['Needs your input', 'The agent needs permission or has a question. A gentle paw tap asks the user to respond before the agent continues.', 'Melo raises a front paw to ask for attention'],
+      idle_rest: ['Resting', 'The agent is open, with no task underway. Quiet breathing gives Melo a calm presence, like a digital pet resting nearby.', 'Melo rests with eyes closed'],
+      idle_play: ['Playing', 'A second expression of idle time: Melo plays with a toy. The agent is still available, with no task running—just a little companionship.', 'Melo plays with a rope toy']
     };
     const image = document.getElementById('melo-avatar');
     const title = document.getElementById('melo-state-title');
