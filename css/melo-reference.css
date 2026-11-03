@@ -1,0 +1,15 @@
+/* Pair the real-life reference with the chosen direction, keeping explorations optional. */
+.melo-reference-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:30px 0}
+.melo-reference-pair img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}
+.melo-reference-pair .melo-reference-avatar{object-fit:contain;background:#f1ece3;padding:18px}
+.melo-reference-pair figcaption{font-size:14px;line-height:1.6;color:var(--muted);margin-top:14px}
+.melo-reference-pair strong{display:block;color:var(--ink);font-size:16px;margin-bottom:4px}
+.melo-explorations{grid-template-columns:repeat(2,minmax(0,1fr));margin:10px 0 0}
+.melo-explorations figure:first-child{outline:0}
+@media(max-width:600px){
+ .melo-reference-pair{gap:14px;margin-block:24px}
+ .melo-reference-pair .melo-reference-avatar{padding:8px}
+ .melo-reference-pair figcaption{margin-top:12px}
+ .melo-explorations{grid-template-columns:1fr}
+}
+@media print{.melo-reference-pair{break-inside:avoid}}
