@@ -5,12 +5,12 @@
   const demo = document.querySelector('[data-melo-demo]');
   if (demo) {
     const states = {
-      startup: ['Starting up', 'When the user opens the agent, Melo gets up, shakes out, and settles into a seated pose. A one-time arrival begins the session.', 'Melo gets up and settles into a seated pose'],
-      thinking: ['Thinking', 'The agent is considering the user’s input. A measured head tilt gives thinking its own expression before the task begins.', 'Melo tilts its head while thinking'],
-      working: ['Working', 'The agent is carrying out a task. Headphones and typing make active work distinct from thinking or waiting.', 'Melo wears headphones and types at a laptop'],
-      attention: ['Needs your input', 'The agent needs permission or has a question. A gentle paw tap asks the user to respond before the agent continues.', 'Melo raises a front paw to ask for attention'],
-      idle_rest: ['Resting', 'The agent is open, with no task underway. Quiet breathing gives Melo a calm, familiar presence while the agent waits for the next task.', 'Melo rests with eyes closed'],
-      idle_play: ['Playing', 'A second expression of idle time: Melo plays with a toy. The agent is still available, with no task running—just a little companionship.', 'Melo plays with a rope toy']
+      startup: ['Starting up', 'Melo wakes up when you open the agent.', 'Melo gets up and settles into a seated pose'],
+      thinking: ['Thinking', 'Considering your input before starting a task.', 'Melo tilts its head while thinking'],
+      working: ['Working', 'Carrying out your task.', 'Melo wears headphones and types at a laptop'],
+      attention: ['Needs your input', 'Waiting for your answer or permission to continue.', 'Melo raises a front paw to ask for attention'],
+      idle_rest: ['Resting', 'Resting while the agent is idle and ready for your next task.', 'Melo rests with eyes closed'],
+      idle_play: ['Playing', 'A playful moment while the agent is idle. No task is running.', 'Melo plays with a rope toy']
     };
     const image = document.getElementById('melo-avatar');
     const title = document.getElementById('melo-state-title');
