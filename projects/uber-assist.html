@@ -7,6 +7,7 @@
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../css/portfolio.css?v=20261005"><link rel="stylesheet" href="../css/case-story.css?v=20261005"><link rel="stylesheet" href="../css/design-lab.css?v=20261102">
 <link rel="stylesheet" href="../css/uber-case.css?v=20261103">
+<link rel="stylesheet" href="../css/readability.css?v=20261103b">
 </head><body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap header-inner">
@@ -27,103 +28,102 @@
     <div><p class="eyebrow">Carnegie Mellon · UX research &amp; design · Uber Eats concept</p>
       <h1 id="case-title">Redesigning an AI customer support chatbot for Uber Eats.</h1>
       <p class="lead">I redesigned an AI support chatbot to help customers understand their options and reach a person without starting over. User interviews with four Uber Eats users framed the problem; usability testing with those participants guided the course prototype’s refinement.</p>
-      <div class="skill-line"><span>User interviews</span><span>Interaction design</span><span>Usability testing</span></div>
+
       <div class="case-actions"><a class="button" href="#walkthrough">Try the prototype <span aria-hidden="true">↓</span></a><a class="text-link" href="#challenge">Read the design story <span aria-hidden="true">↓</span></a></div>
     </div>
-    <figure class="story-cover uber-hero"><img src="../img/design/uber/mascot.webp" width="600" height="600" alt="Cream and yellow support character with a headset, cape, and utensils"><figcaption>A welcoming character for the AI assistant; human support has a separate identity.</figcaption></figure>
+    <figure class="story-cover uber-hero"><img src="../img/design/uber/mascot.webp" width="600" height="600" alt="Cream and yellow support character with a headset, cape, and utensils"></figure>
   </div>
-  <div class="story-impact"><p class="eyebrow">Design outcome</p><p><strong>A support chatbot you can try.</strong> From user interviews and a service blueprint to screen designs refined through usability testing, then an interactive prototype for delayed deliveries, past-order issues, and human support.</p></div>
-  <dl class="case-meta"><div><dt>My role</dt><dd>UX researcher &amp; designer</dd></div><div><dt>My contribution</dt><dd>Interviews, service mapping, wireframes, usability testing, UX writing, and visual direction</dd></div><div><dt>Context</dt><dd>CMU Course 601 → continued interactive refinement</dd></div></dl>
-  <dl class="story-metrics"><div><dt>4 participants</dt><dd>User interviews explored their Uber Eats support experiences</dd></div><div><dt>Usability testing</dt><dd>Returning participants connected prototype feedback to the frustrations they had described</dd></div><div><dt>3 scenarios</dt><dd>Available in the later interactive build</dd></div></dl>
-  <p class="scope-label">Independent student concept, not affiliated with Uber. The prototype uses scripted responses; orders, refunds, and human-support connections are simulated.</p>
+  <div class="story-impact"><p class="eyebrow">Redesigned</p><p>A clearer support flow, from explaining an order problem to reaching a person with the conversation intact.</p></div>
+  <dl class="case-meta"><div><dt>My role</dt><dd>UX researcher &amp; designer</dd></div><div><dt>My contribution</dt><dd>Interviews, service mapping, wireframes, usability testing, UX writing, and visual direction</dd></div><div><dt>Context</dt><dd>CMU course · Later prototype built with AI tools</dd></div></dl>
+
 </section>
 <div class="case-layout story-layout">
-  <nav class="case-sidebar" aria-label="Case study sections"><p class="eyebrow">The design story</p><a href="#challenge">01 · Why this project</a><a href="#research">02 · Understand the problem</a><a href="#iteration">03 · Design, test, refine</a><a href="#refinement">04 · The solution</a><a href="#walkthrough">05 · Try the prototype</a><a href="#reflection">06 · What I learned</a><a href="../index.html#design">← Design explorations</a></nav>
+  <nav class="case-sidebar" aria-label="Case study sections"><a href="#challenge">The problem</a><a href="#research">Research</a><a href="#iteration">Testing &amp; iteration</a><a href="#refinement">The solution</a><a href="#walkthrough">Try the prototype</a><a href="#reflection">Reflection</a><a href="../index.html#design">← Design explorations</a></nav>
   <div class="case-body story-body">
-    <details class="mobile-contents"><summary>Jump to a chapter</summary><nav aria-label="Case study sections on mobile"><a href="#challenge">01 · Why this project</a><a href="#research">02 · Understand the problem</a><a href="#iteration">03 · Design, test, refine</a><a href="#refinement">04 · The solution</a><a href="#walkthrough">05 · Try the prototype</a><a href="#reflection">06 · What I learned</a></nav></details>
+    <details class="mobile-contents"><summary>Jump to a chapter</summary><nav aria-label="Case study sections on mobile"><a href="#challenge">The problem</a><a href="#research">Research</a><a href="#iteration">Testing &amp; iteration</a><a href="#refinement">The solution</a><a href="#walkthrough">Try the prototype</a><a href="#reflection">Reflection</a></nav></details>
 
     <section class="story-section" id="challenge">
-      <p class="eyebrow">01 / Why I started</p>
-      <h2>Getting help should not become a second problem.</h2>
+
+      <h2>When getting help becomes another problem.</h2>
       <p>A delivery problem is already frustrating. Repetitive replies, rigid menus, and an unclear route to a person can make the support experience feel just as difficult as the original issue.</p>
       <p>This CMU project began with that gap between automated support and the help customers need. My planning work reviewed complaints about Uber’s chatbot experience; I then interviewed four Uber Eats users to understand their experiences directly.</p>
-      <div class="story-callout"><p class="eyebrow">The design question</p><p>How might an AI support chatbot help customers understand their options, feel heard, and reach a person without starting over?</p></div>
+
       <p>I focused the design on order-related support, using a delayed delivery as the main scenario. It creates a concrete moment to explore uncertainty, the consequences of canceling, and the transition from AI to human help.</p>
     </section>
 
     <section class="story-section" id="research">
-      <p class="eyebrow">02 / Understand before redesigning</p>
+
       <h2>Look at the whole support journey.</h2>
-      <p>I interviewed <strong>four Uber Eats users</strong> to learn about their support experiences. I used a service blueprint to connect the customer’s actions with the interface and the support processes behind it, looking for where the experience broke down.</p>
-      <div class="research-sequence" aria-label="Research and design sequence"><div><span>Listen</span><strong>4 user interviews</strong><p>Understand the experience of getting help.</p></div><b aria-hidden="true">→</b><div><span>Map</span><strong>Service blueprint</strong><p>Locate friction across the journey.</p></div><b aria-hidden="true">→</b><div><span>Evaluate</span><strong>Usability testing</strong><p>Reconnect prototype feedback with participants’ earlier support experiences.</p></div></div>
-      <h3>Three problems shaped the design.</h3>
+      <p>I combined user interviews with a service blueprint to connect customer actions, interface choices, and support processes. Three problems shaped the redesign.</p>
+
+
       <div class="story-steps">
-        <article class="story-step"><span class="step-no">01 / Repetition</span><h3>Replies without progress.</h3><p>Repeated or irrelevant chatbot answers can leave customers feeling unheard, without a useful next step.</p></article>
-        <article class="story-step"><span class="step-no">02 / Escalation</span><h3>A person feels out of reach.</h3><p>An unclear escalation path leaves customers uncertain about when, or whether, human help is available.</p></article>
-        <article class="story-step"><span class="step-no">03 / Continuity</span><h3>Explaining it all again.</h3><p>A disconnected handoff asks customers to repeat the issue after they have already spent time explaining it.</p></article>
+        <article class="story-step"><h3>Replies without progress.</h3><p>Repeated or irrelevant chatbot answers can leave customers feeling unheard, without a useful next step.</p></article>
+        <article class="story-step"><h3>A person feels out of reach.</h3><p>An unclear escalation path leaves customers uncertain about when, or whether, human help is available.</p></article>
+        <article class="story-step"><h3>Explaining it all again.</h3><p>A disconnected handoff asks customers to repeat the issue after they have already spent time explaining it.</p></article>
       </div>
-<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/blueprint.webp" target="_blank" rel="noopener" aria-label="Course service blueprint mapping the Uber support journey and its points of friction — open full-size image in a new tab"><img src="../img/design/uber/blueprint.webp" alt="Course service blueprint mapping the Uber support journey and its points of friction" width="1800" height="1013" loading="lazy"></a><figcaption><strong>Mapping the problem:</strong> the blueprint connects customer actions, interface touchpoints, and supporting processes. It is my course analysis, not Uber’s internal service documentation. Select to view at full size.</figcaption></figure>
-      <div class="synthesis-line"><p><strong>Design priorities:</strong> a useful next action <span aria-hidden="true">·</span> a visible human option <span aria-hidden="true">·</span> context that carries forward</p></div>
+<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/blueprint.webp" target="_blank" rel="noopener" aria-label="Course service blueprint mapping the Uber support journey and its points of friction — open full-size image in a new tab"><img src="../img/design/uber/blueprint.webp" alt="Course service blueprint mapping the Uber support journey and its points of friction" width="1800" height="1013" loading="lazy"></a><figcaption>My course blueprint maps customer actions and support touchpoints; it is not Uber’s internal documentation.</figcaption></figure>
+
     </section>
 
     <section class="story-section" id="iteration">
-      <p class="eyebrow">03 / Sketch, test, and revise</p>
+
       <h2>Testing changed what “helpful” looked like.</h2>
-      <p>I sketched the journey and built a digital prototype, then invited the four interview participants back for <strong>usability testing</strong>.</p>
-      <p>Returning to these participants connected the evaluation to the support problems they had described in interviews. Their feedback helped me examine whether the proposed flow addressed those frustrations and where the interaction still felt unclear.</p>
-      <p>This made the design tradeoff concrete: the interface needed to feel simple while still giving people enough information and control. I used the usability feedback to refine action labels, the route to human support, and the closing experience.</p>
-<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/sketch.webp" target="_blank" rel="noopener" aria-label="Initial hand-drawn Uber Eats chatbot flow — open full-size image in a new tab"><img src="../img/design/uber/sketch.webp" alt="Initial hand-drawn Uber Eats chatbot flow" width="1800" height="1008" loading="lazy"></a><figcaption><strong>Start with the sequence:</strong> sketch the path from recognizing an issue to offering help, confirming an action, and closing the conversation. Select to view at full size.</figcaption></figure>
+      <p>I sketched the journey, built a digital prototype, and invited the four interview participants back for <strong>usability testing</strong>. This connected their feedback to the support frustrations they had described in interviews.</p>
+      <p>I looked for whether the flow addressed those frustrations and where choices still felt unclear. Their feedback guided three changes:</p>
+
+<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/sketch.webp" target="_blank" rel="noopener" aria-label="Initial hand-drawn Uber Eats chatbot flow — open full-size image in a new tab"><img src="../img/design/uber/sketch.webp" alt="Initial hand-drawn Uber Eats chatbot flow" width="1800" height="1008" loading="lazy"></a><figcaption>Early sketches explored the path from reporting an issue to resolving it.</figcaption></figure>
       <div class="iteration-list">
-        <article><h3>Fewer options, with clearer meanings.</h3><p><strong>What surfaced:</strong> repetitive prompts, unclear labels such as “reassign courier,” and too many choices created confusion.</p><p><strong>What I changed:</strong> reduced repeated prompts, simplified action labels, and narrowed the opening to help with the current order or a different issue. Free text remained available for issues the menu did not cover.</p></article>
-        <article><h3>Make the route to a person explicit.</h3><p><strong>What surfaced:</strong> customers needed a clearer distinction between continuing with AI and requesting human help.</p><p><strong>What I changed:</strong> clarified the AI pathway and gave human support a persistent, separate control. In the interactive build, a named person and a distinct icon make the handoff visible.</p></article>
-        <article><h3>End with reassurance, not a performance score.</h3><p><strong>What surfaced:</strong> reordering, a gift-card offer, and time or comparison details added confusion or felt out of place after a frustrating experience.</p><p><strong>What I changed:</strong> removed unnecessary choices and the comparison-style ending. I refined the closing around a clear outcome, a thank-you, a supportive character, and optional feedback.</p></article>
+        <article><h3>Fewer options, with clearer meanings.</h3><p>Repeated prompts and labels such as “reassign courier” confused participants. I simplified the opening to two choices: help with this order or something else, while keeping free text available.</p></article>
+        <article><h3>Make the route to a person explicit.</h3><p>Participants needed to distinguish AI from human support. I made the human-help control persistent; the later interactive build also uses a named specialist and a distinct icon at handoff.</p></article>
+        <article><h3>End with reassurance, not a performance score.</h3><p>Reordering, gift-card offers, and comparison details felt confusing or out of place. I replaced that ending with a clear outcome, a thank-you, a supportive character, and optional feedback.</p></article>
       </div>
       <div class="figure-pair">
-<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/early-course-prototype.webp" target="_blank" rel="noopener" aria-label="Early course prototype with many choices and a performance-style ending — open full-size image in a new tab"><img src="../img/design/uber/early-course-prototype.webp" alt="Early course prototype with many choices and a performance-style ending" width="1800" height="1008" loading="lazy"></a><figcaption><strong>Early course draft:</strong> overlapping actions and a scorecard added complexity. Select to view at full size.</figcaption></figure><figure class="story-figure"><a class="artifact-link" href="../img/design/uber/course-prototype.webp" target="_blank" rel="noopener" aria-label="Final course prototype showing a simpler four-screen support flow — open full-size image in a new tab"><img src="../img/design/uber/course-prototype.webp" alt="Final course prototype showing a simpler four-screen support flow" width="1800" height="1008" loading="lazy"></a><figcaption><strong>Final course version:</strong> simpler choices, clearer AI wording, and a more supportive ending. The interactive build below continues this work. Select to view at full size.</figcaption></figure>
+<figure class="story-figure"><a class="artifact-link" href="../img/design/uber/early-course-prototype.webp" target="_blank" rel="noopener" aria-label="Early course prototype with many choices and a performance-style ending — open full-size image in a new tab"><img src="../img/design/uber/early-course-prototype.webp" alt="Early course prototype with many choices and a performance-style ending" width="1800" height="1008" loading="lazy"></a><figcaption><strong>Early course draft:</strong> overlapping actions and a scorecard added complexity.</figcaption></figure><figure class="story-figure"><a class="artifact-link" href="../img/design/uber/course-prototype.webp" target="_blank" rel="noopener" aria-label="Final course prototype showing a simpler four-screen support flow — open full-size image in a new tab"><img src="../img/design/uber/course-prototype.webp" alt="Final course prototype showing a simpler four-screen support flow" width="1800" height="1008" loading="lazy"></a><figcaption><strong>Final course version:</strong> simpler choices, clearer AI wording, and a more supportive ending. The interactive build below continues this work.</figcaption></figure>
       </div>
       <p class="artifact-note">These course screens document earlier iterations. Their sample amounts and timing are illustrative; the later interactive prototype has revised scenarios and copy.</p>
     </section>
 
     <section class="story-section" id="refinement">
-      <p class="eyebrow">04 / The solution</p>
-      <h2>A clear next step, with a person always within reach.</h2>
+
+      <h2>Give customers a clear next step.</h2>
       <p>The solution combines order context, understandable actions, and a visible human-support option. I continued the course screens as an interactive prototype so the design could be explored beyond a single sequence of screens.</p>
-      <div class="story-loop" aria-label="Proposed support journey"><div><span>01 / Start</span><h3>Know the order.</h3><p>Begin with the current order or describe something else.</p></div><div><span>02 / Choose</span><h3>See the options.</h3><p>Contact the courier, review cancellation, or type a message.</p></div><div><span>03 / Continue</span><h3>Keep the context.</h3><p>Carry the issue, messages, and actions into human support.</p></div><div><span>04 / Finish</span><h3>Understand the outcome.</h3><p>Confirm what happened and offer optional feedback.</p></div></div>
-      <div class="design-principles">
-        <article><p class="eyebrow">Interaction design</p><h3>Make consequences visible.</h3><p>Cancellation summaries explain the proposed outcome before confirmation. Different courier scenarios let the customer explore keeping an order or reviewing a refund.</p></article>
-        <article><p class="eyebrow">Conversation design</p><h3>Leave room for their own words.</h3><p>Customers can describe an issue without forcing it into a category. The prototype carries that description and the action history into the simulated handoff.</p></article>
-        <article><p class="eyebrow">Visual design</p><h3>Welcome without disguising the AI.</h3><p>I directed a rounded character with a headset, cape, and food-service cues. A dedicated portrait keeps it readable in chat; the human specialist uses a different identity.</p></article>
-        <article><p class="eyebrow">UX writing</p><h3>Reassure through useful information.</h3><p>Acknowledge the wait, explain what the system is doing, and make the next action clear. Warmth works alongside an understandable support flow.</p></article>
-      </div>
+
+      <details class="research-details"><summary>More on interaction, visual design, and UX writing</summary><div><div class="design-principles">
+        <article><h3>Make consequences visible.</h3><p>Cancellation summaries explain the proposed outcome before confirmation. Different courier scenarios let the customer explore keeping an order or reviewing a refund.</p></article>
+        <article><h3>Leave room for their own words.</h3><p>Customers can describe an issue without forcing it into a category. The prototype carries that description and the action history into the simulated handoff.</p></article>
+        <article><h3>Welcome without disguising the AI.</h3><p>I directed a rounded character with a headset, cape, and food-service cues. A dedicated portrait keeps it readable in chat; the human specialist uses a different identity.</p></article>
+        <article><h3>Reassure through useful information.</h3><p>Acknowledge the wait, explain what the system is doing, and make the next action clear. Warmth works alongside an understandable support flow.</p></article>
+      </div></div></details>
     </section>
 
     <section class="story-section" id="walkthrough">
-      <p class="eyebrow">05 / Try the interactive prototype</p>
+
       <h2>Explore the conversation yourself.</h2>
-      <p>Choose a scenario in the prototype, click through the support options, or type a message. The design notes alongside the chat explain the choices behind each screen.</p>
-      <div class="prototype-prompts" aria-label="Suggested prototype scenarios"><article><span>01 / Courier replies</span><p>Contact the courier, then compare keeping the order with canceling it.</p></article><article><span>02 / No reply</span><p>See the alternatives offered when the courier does not respond.</p></article><article><span>03 / Past order</span><p>Describe an issue and request a person. Check which details carry over.</p></article></div>
-      <div class="prototype-toolbar"><a class="button" href="../prototypes/uber-assist/index.html" target="_blank" rel="noopener" aria-label="Open the Uber Eats chatbot prototype in a full window, opens in a new tab">Open in a full window <span aria-hidden="true">↗</span></a><a class="text-link" href="#reflection">Skip the prototype <span aria-hidden="true">↓</span></a></div>
-      <p class="prototype-note" id="prototype-note">Interactive student concept. Chat replies, courier updates, refunds, and human handoffs are simulated. Sample amounts illustrate these scenarios, not current Uber policy. “Restart demo” starts again.</p>
+      <p>Try getting help with a delayed delivery or a past order. The “Try a scenario” menu lets you choose whether the courier replies, stays silent, or the order is already complete. Click the options or type your own message.</p>
+
+      <div class="prototype-toolbar"><a class="button" href="../prototypes/uber-assist/index.html" target="_blank" rel="noopener" aria-label="Open the Uber Eats chatbot prototype in a full window, opens in a new tab">Open in a full window <span aria-hidden="true">↗</span></a></div>
+      <p class="prototype-note" id="prototype-note">Student concept, not affiliated with Uber. All replies, orders, refunds, and human handoffs are simulated; sample amounts are not current Uber policy.</p>
       <div class="prototype-shell"><iframe src="../prototypes/uber-assist/index.html" title="Interactive Uber Eats customer-support chatbot prototype" aria-describedby="prototype-note" loading="lazy" width="1000" height="920"></iframe></div>
-      <p class="prototype-fallback">For more room to explore, <a href="../prototypes/uber-assist/index.html" target="_blank" rel="noopener">open the prototype in a separate tab <span aria-hidden="true">↗</span></a>.</p>
+
     </section>
 
     <section class="story-section" id="reflection">
-      <p class="eyebrow">06 / Outcome &amp; reflection</p>
+
       <h2>Clarity is part of feeling supported.</h2>
-      <p class="story-lead">The most useful feedback challenged details that seemed obvious to me.</p>
-      <p>User interviews helped frame the problem; usability testing exposed assumptions in my design. Returning to the interview participants connected their feedback on the proposed flow with the frustrations that informed it. Simplifying the experience meant reconsidering the choices, wording, and emotional tone together.</p>
-      <div class="status-pair"><div><p class="eyebrow">What I completed</p><p>User interviews and usability testing of the course prototype with four Uber Eats users; a service blueprint; iterative screen designs; and a later interactive chatbot prototype with three scenarios.</p></div><div><p class="eyebrow">What I would evaluate next</p><p>Test the later interactive build with new participants: can they understand cancellation consequences, identify AI versus human support, and reach a person without repeating their issue?</p></div></div>
-      <p>The project demonstrates how I connect research to interaction design and make design decisions testable. The four-person study informed the course iterations; it does not establish a measured improvement in resolution time, satisfaction, or trust.</p>
-      <p class="story-source-note">Based on my CMU Course 601 planning and prototyping assignments, user interviews and usability testing with four Uber Eats users, and subsequent interactive refinement. I led the research, design direction, and iteration; AI tools supported the later implementation and character artwork.</p>
+
+      <p>Interviews framed the problem; usability testing exposed assumptions in my design. The lesson was to simplify choices, wording, and emotional tone together.</p>
+      <div class="status-pair"><div><h3>What I learned</h3><p>Clear labels and a visible route to human help mattered more than adding choices.</p></div><div><h3>Next evaluation</h3><p>Test the later interactive build with new participants: are cancellation consequences clear, and can people reach human support without repeating themselves?</p></div></div>
+      <p>The four-person study informed the course iterations. The later interactive build still needs usability evaluation.</p>
+
     </section>
-    <div class="next-case"><p class="eyebrow">Another side of my design practice</p><a href="melo-agent.html">Designing an avatar for a local AI agent. <span aria-hidden="true">↗</span></a></div>
+    <div class="next-case"><a href="melo-agent.html">Designing an avatar for a local AI agent. <span aria-hidden="true">↗</span></a></div>
   </div>
 </div>
 </main>
 <section class="contact-section" id="contact" aria-labelledby="contact-title">
   <div class="wrap contact-inner">
-    <div><p class="eyebrow">A good conversation is a good start</p><h2 id="contact-title">Let’s ask better questions.</h2><p>I’m exploring UX research opportunities, and related roles in product insights, customer experience, and strategy.</p></div>
+    <div><h2 id="contact-title">Let’s ask better questions.</h2><p>I’m exploring UX research opportunities, and related roles in product insights, customer experience, and strategy.</p></div>
     <div class="contact-actions"><a class="button light" href="mailto:cindykuo819@gmail.com">Say hello <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/cindykuo123/" target="_blank" rel="noopener" aria-label="LinkedIn, opens in a new tab">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
